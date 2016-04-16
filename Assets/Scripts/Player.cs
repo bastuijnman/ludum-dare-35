@@ -37,6 +37,11 @@ public class Player : MonoBehaviour {
 		 */
 		movement = new Vector3 (Input.GetAxis ("Horizontal"), Input.GetAxis ("Vertical"), 0);
 
+		// Disable moving up
+		if (Input.GetAxis("Vertical") > 0) {
+			movement.y = 0;
+		}
+
 		// Add to the current object position by updating movement with speed and game speed
 		transform.position += movement * speed * Time.deltaTime;
 	
