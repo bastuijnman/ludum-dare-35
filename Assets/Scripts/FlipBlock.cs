@@ -21,6 +21,9 @@ public class FlipBlock : MonoBehaviour
     {
         currentSprite += 1; // adds 1 to the "currentSprite" integer.
 
+        Debug.logger.Log(currentSprite);
+        Debug.logger.Log(arrayLength);
+
         if (currentSprite > arrayLength)
         { //Deletes the object if currentSprite is greater than the
           //length of the blockColors array
