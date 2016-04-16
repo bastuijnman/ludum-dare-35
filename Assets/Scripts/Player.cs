@@ -9,6 +9,10 @@ public class Player : MonoBehaviour {
 	// Collision radius, change this property to play around with collision detection
 	public float collisionRadius = 0.5f;
 
+	// Force at which the player can jump
+	public float jumpForce = 3.0f;
+
+	bool playerIsFalling = false;
 	Vector3 movement;
 	CircleCollider2D playerCollider;
 	Rigidbody2D playerBody;
@@ -23,6 +27,7 @@ public class Player : MonoBehaviour {
 		playerCollider = gameObject.AddComponent<CircleCollider2D> ();
 		playerCollider.offset = Vector3.zero;
 		playerCollider.radius = collisionRadius;
+		playerCollider.isTrigger = true;
 
 	}
 
@@ -35,11 +40,11 @@ public class Player : MonoBehaviour {
 		 * Vertical = W/S/Up/Down
 		 * 
 		 */
-		movement = new Vector3 (Input.GetAxis ("Horizontal"), Input.GetAxis ("Vertical"), 0);
+		movement = new Vector3 (Input.GetAxis ("Horizontal"), 0.0f, 0.0f);
 
-		// Disable moving up
-		if (Input.GetAxis("Vertical") > 0) {
-			movement.y = 0;
+		if (Input.GetButtonDown ("Jump") && !playerIsFalling) {
+			playerBody.velocity = new Vector2 (0, jumpForce);
+			playerIsFalling = true;
 		}
 
 		// Add to the current object position by updating movement with speed and game speed
