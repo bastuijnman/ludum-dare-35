@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: c4a4d8aae373f477caa5ed5741d88bf7
-timeCreated: 1460807243
+timeCreated: 1460809267
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -81,17 +81,17 @@ TextureImporter:
         y: 384
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 1, y: 0}
-        - {x: 0, y: -2}
-        - {x: 0, y: -128}
-        - {x: 22, y: -128}
-        - {x: 41, y: -113}
-        - {x: 41, y: -51}
-        - {x: 32, y: 0}
+      - - {x: -63, y: 64}
+        - {x: -64, y: 62}
+        - {x: -64, y: -64}
+        - {x: -42, y: -64}
+        - {x: -23, y: -49}
+        - {x: -23, y: 13}
+        - {x: -32, y: 64}
     - name: spritesheet_items_1
       rect:
         serializedVersion: 2
@@ -99,16 +99,16 @@ TextureImporter:
         y: 384
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 0, y: 0}
-        - {x: 0, y: -128}
-        - {x: 22, y: -128}
-        - {x: 121, y: -51}
-        - {x: 121, y: -24}
-        - {x: 42, y: 0}
+      - - {x: -64, y: 64}
+        - {x: -64, y: -64}
+        - {x: -42, y: -64}
+        - {x: 57, y: 13}
+        - {x: 57, y: 40}
+        - {x: -22, y: 64}
     - name: spritesheet_items_2
       rect:
         serializedVersion: 2
@@ -116,18 +116,18 @@ TextureImporter:
         y: 384
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 87, y: -18}
-        - {x: 34, y: 0}
-        - {x: 0, y: 0}
-        - {x: 0, y: -128}
-        - {x: 22, y: -128}
-        - {x: 121, y: -63}
-        - {x: 121, y: -43}
-        - {x: 118, y: -37}
+      - - {x: 23, y: 46}
+        - {x: -30, y: 64}
+        - {x: -64, y: 64}
+        - {x: -64, y: -64}
+        - {x: -42, y: -64}
+        - {x: 57, y: 1}
+        - {x: 57, y: 21}
+        - {x: 54, y: 27}
     - name: spritesheet_items_3
       rect:
         serializedVersion: 2
@@ -135,17 +135,17 @@ TextureImporter:
         y: 384
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 45, y: -31}
-        - {x: 31, y: -39}
-        - {x: 31, y: -96}
-        - {x: 32, y: -98}
-        - {x: 37, y: -99}
-        - {x: 99, y: -99}
-        - {x: 99, y: -31}
+      - - {x: -19, y: 33}
+        - {x: -33, y: 25}
+        - {x: -33, y: -32}
+        - {x: -32, y: -34}
+        - {x: -27, y: -35}
+        - {x: 35, y: -35}
+        - {x: 35, y: 33}
     - name: spritesheet_items_4
       rect:
         serializedVersion: 2
@@ -153,21 +153,21 @@ TextureImporter:
         y: 384
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 56, y: -36}
-        - {x: 29, y: -36}
-        - {x: 24, y: -46}
-        - {x: 21, y: -55}
-        - {x: 21, y: -68}
-        - {x: 22, y: -74}
-        - {x: 29, y: -92}
-        - {x: 106, y: -92}
-        - {x: 108, y: -87}
-        - {x: 108, y: -57}
-        - {x: 105, y: -50}
+      - - {x: -8, y: 28}
+        - {x: -35, y: 28}
+        - {x: -40, y: 18}
+        - {x: -43, y: 9}
+        - {x: -43, y: -4}
+        - {x: -42, y: -10}
+        - {x: -35, y: -28}
+        - {x: 42, y: -28}
+        - {x: 44, y: -23}
+        - {x: 44, y: 7}
+        - {x: 41, y: 14}
     - name: spritesheet_items_5
       rect:
         serializedVersion: 2
@@ -175,20 +175,20 @@ TextureImporter:
         y: 384
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 87, y: -38}
-        - {x: 40, y: -38}
-        - {x: 27, y: -55}
-        - {x: 27, y: -66}
-        - {x: 33, y: -73}
-        - {x: 59, y: -90}
-        - {x: 70, y: -90}
-        - {x: 101, y: -68}
-        - {x: 101, y: -54}
-        - {x: 100, y: -51}
+      - - {x: 23, y: 26}
+        - {x: -24, y: 26}
+        - {x: -37, y: 9}
+        - {x: -37, y: -2}
+        - {x: -31, y: -9}
+        - {x: -5, y: -26}
+        - {x: 6, y: -26}
+        - {x: 37, y: -4}
+        - {x: 37, y: 10}
+        - {x: 36, y: 13}
     - name: spritesheet_items_6
       rect:
         serializedVersion: 2
@@ -196,16 +196,16 @@ TextureImporter:
         y: 256
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 0, y: 0}
-        - {x: 0, y: -128}
-        - {x: 22, y: -128}
-        - {x: 121, y: -62}
-        - {x: 121, y: -25}
-        - {x: 55, y: 0}
+      - - {x: -64, y: 64}
+        - {x: -64, y: -64}
+        - {x: -42, y: -64}
+        - {x: 57, y: 2}
+        - {x: 57, y: 39}
+        - {x: -9, y: 64}
     - name: spritesheet_items_7
       rect:
         serializedVersion: 2
@@ -213,18 +213,18 @@ TextureImporter:
         y: 256
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 0, y: -128}
-        - {x: 22, y: -128}
-        - {x: 121, y: -82}
-        - {x: 121, y: -31}
-        - {x: 113, y: -23}
-        - {x: 51, y: 0}
-        - {x: 3, y: 0}
-        - {x: 0, y: -2}
+      - - {x: -64, y: -64}
+        - {x: -42, y: -64}
+        - {x: 57, y: -18}
+        - {x: 57, y: 33}
+        - {x: 49, y: 41}
+        - {x: -13, y: 64}
+        - {x: -61, y: 64}
+        - {x: -64, y: 62}
     - name: spritesheet_items_8
       rect:
         serializedVersion: 2
@@ -232,16 +232,16 @@ TextureImporter:
         y: 256
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 0, y: 0}
-        - {x: 0, y: -128}
-        - {x: 21, y: -128}
-        - {x: 41, y: -107}
-        - {x: 41, y: -55}
-        - {x: 22, y: 0}
+      - - {x: -64, y: 64}
+        - {x: -64, y: -64}
+        - {x: -43, y: -64}
+        - {x: -23, y: -43}
+        - {x: -23, y: 9}
+        - {x: -42, y: 64}
     - name: spritesheet_items_9
       rect:
         serializedVersion: 2
@@ -249,18 +249,18 @@ TextureImporter:
         y: 256
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 59, y: -33}
-        - {x: 31, y: -54}
-        - {x: 31, y: -62}
-        - {x: 37, y: -96}
-        - {x: 90, y: -96}
-        - {x: 97, y: -68}
-        - {x: 97, y: -52}
-        - {x: 66, y: -33}
+      - - {x: -5, y: 31}
+        - {x: -33, y: 10}
+        - {x: -33, y: 2}
+        - {x: -27, y: -32}
+        - {x: 26, y: -32}
+        - {x: 33, y: -4}
+        - {x: 33, y: 12}
+        - {x: 2, y: 31}
     - name: spritesheet_items_10
       rect:
         serializedVersion: 2
@@ -268,19 +268,19 @@ TextureImporter:
         y: 256
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 61, y: -36}
-        - {x: 27, y: -36}
-        - {x: 21, y: -47}
-        - {x: 21, y: -80}
-        - {x: 34, y: -92}
-        - {x: 106, y: -92}
-        - {x: 108, y: -85}
-        - {x: 108, y: -51}
-        - {x: 104, y: -49}
+      - - {x: -3, y: 28}
+        - {x: -37, y: 28}
+        - {x: -43, y: 17}
+        - {x: -43, y: -16}
+        - {x: -30, y: -28}
+        - {x: 42, y: -28}
+        - {x: 44, y: -21}
+        - {x: 44, y: 13}
+        - {x: 40, y: 15}
     - name: spritesheet_items_11
       rect:
         serializedVersion: 2
@@ -288,18 +288,18 @@ TextureImporter:
         y: 256
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 40, y: -38}
-        - {x: 27, y: -55}
-        - {x: 27, y: -68}
-        - {x: 54, y: -90}
-        - {x: 69, y: -90}
-        - {x: 101, y: -73}
-        - {x: 101, y: -53}
-        - {x: 88, y: -38}
+      - - {x: -24, y: 26}
+        - {x: -37, y: 9}
+        - {x: -37, y: -4}
+        - {x: -10, y: -26}
+        - {x: 5, y: -26}
+        - {x: 37, y: -9}
+        - {x: 37, y: 11}
+        - {x: 24, y: 26}
     - name: spritesheet_items_12
       rect:
         serializedVersion: 2
@@ -307,17 +307,17 @@ TextureImporter:
         y: 128
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 31, y: 0}
-        - {x: 0, y: 0}
-        - {x: 0, y: -128}
-        - {x: 24, y: -128}
-        - {x: 121, y: -84}
-        - {x: 121, y: -29}
-        - {x: 46, y: -4}
+      - - {x: -33, y: 64}
+        - {x: -64, y: 64}
+        - {x: -64, y: -64}
+        - {x: -40, y: -64}
+        - {x: 57, y: -20}
+        - {x: 57, y: 35}
+        - {x: -18, y: 60}
     - name: spritesheet_items_13
       rect:
         serializedVersion: 2
@@ -325,17 +325,17 @@ TextureImporter:
         y: 128
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 1, y: 0}
-        - {x: 0, y: -2}
-        - {x: 0, y: -128}
-        - {x: 22, y: -128}
-        - {x: 41, y: -113}
-        - {x: 41, y: -51}
-        - {x: 32, y: 0}
+      - - {x: -63, y: 64}
+        - {x: -64, y: 62}
+        - {x: -64, y: -64}
+        - {x: -42, y: -64}
+        - {x: -23, y: -49}
+        - {x: -23, y: 13}
+        - {x: -32, y: 64}
     - name: spritesheet_items_14
       rect:
         serializedVersion: 2
@@ -343,16 +343,16 @@ TextureImporter:
         y: 128
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 30, y: -30}
-        - {x: 30, y: -83}
-        - {x: 47, y: -98}
-        - {x: 90, y: -98}
-        - {x: 98, y: -85}
-        - {x: 98, y: -30}
+      - - {x: -34, y: 34}
+        - {x: -34, y: -19}
+        - {x: -17, y: -34}
+        - {x: 26, y: -34}
+        - {x: 34, y: -21}
+        - {x: 34, y: 34}
     - name: spritesheet_items_15
       rect:
         serializedVersion: 2
@@ -360,21 +360,21 @@ TextureImporter:
         y: 128
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 56, y: -36}
-        - {x: 29, y: -36}
-        - {x: 24, y: -46}
-        - {x: 21, y: -55}
-        - {x: 21, y: -68}
-        - {x: 22, y: -74}
-        - {x: 29, y: -92}
-        - {x: 106, y: -92}
-        - {x: 108, y: -87}
-        - {x: 108, y: -57}
-        - {x: 105, y: -50}
+      - - {x: -8, y: 28}
+        - {x: -35, y: 28}
+        - {x: -40, y: 18}
+        - {x: -43, y: 9}
+        - {x: -43, y: -4}
+        - {x: -42, y: -10}
+        - {x: -35, y: -28}
+        - {x: 42, y: -28}
+        - {x: 44, y: -23}
+        - {x: 44, y: 7}
+        - {x: 41, y: 14}
     - name: spritesheet_items_16
       rect:
         serializedVersion: 2
@@ -382,18 +382,18 @@ TextureImporter:
         y: 128
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 40, y: -38}
-        - {x: 27, y: -55}
-        - {x: 27, y: -68}
-        - {x: 54, y: -90}
-        - {x: 69, y: -90}
-        - {x: 101, y: -73}
-        - {x: 101, y: -53}
-        - {x: 88, y: -38}
+      - - {x: -24, y: 26}
+        - {x: -37, y: 9}
+        - {x: -37, y: -4}
+        - {x: -10, y: -26}
+        - {x: 5, y: -26}
+        - {x: 37, y: -9}
+        - {x: 37, y: 11}
+        - {x: 24, y: 26}
     - name: spritesheet_items_17
       rect:
         serializedVersion: 2
@@ -401,16 +401,16 @@ TextureImporter:
         y: 128
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 0, y: 0}
-        - {x: 0, y: -128}
-        - {x: 22, y: -128}
-        - {x: 121, y: -51}
-        - {x: 121, y: -24}
-        - {x: 42, y: 0}
+      - - {x: -64, y: 64}
+        - {x: -64, y: -64}
+        - {x: -42, y: -64}
+        - {x: 57, y: 13}
+        - {x: 57, y: 40}
+        - {x: -22, y: 64}
     - name: spritesheet_items_18
       rect:
         serializedVersion: 2
@@ -418,16 +418,16 @@ TextureImporter:
         y: 0
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 0, y: 0}
-        - {x: 0, y: -128}
-        - {x: 21, y: -128}
-        - {x: 41, y: -107}
-        - {x: 41, y: -55}
-        - {x: 22, y: 0}
+      - - {x: -64, y: 64}
+        - {x: -64, y: -64}
+        - {x: -43, y: -64}
+        - {x: -23, y: -43}
+        - {x: -23, y: 9}
+        - {x: -42, y: 64}
     - name: spritesheet_items_19
       rect:
         serializedVersion: 2
@@ -435,16 +435,16 @@ TextureImporter:
         y: 0
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 0, y: 0}
-        - {x: 0, y: -128}
-        - {x: 22, y: -128}
-        - {x: 121, y: -62}
-        - {x: 121, y: -33}
-        - {x: 80, y: 0}
+      - - {x: -64, y: 64}
+        - {x: -64, y: -64}
+        - {x: -42, y: -64}
+        - {x: 57, y: 2}
+        - {x: 57, y: 31}
+        - {x: 16, y: 64}
     - name: spritesheet_items_20
       rect:
         serializedVersion: 2
@@ -452,18 +452,18 @@ TextureImporter:
         y: 0
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 0, y: -128}
-        - {x: 22, y: -128}
-        - {x: 121, y: -82}
-        - {x: 121, y: -31}
-        - {x: 113, y: -23}
-        - {x: 51, y: 0}
-        - {x: 3, y: 0}
-        - {x: 0, y: -2}
+      - - {x: -64, y: -64}
+        - {x: -42, y: -64}
+        - {x: 57, y: -18}
+        - {x: 57, y: 33}
+        - {x: 49, y: 41}
+        - {x: -13, y: 64}
+        - {x: -61, y: 64}
+        - {x: -64, y: 62}
     - name: spritesheet_items_21
       rect:
         serializedVersion: 2
@@ -471,19 +471,19 @@ TextureImporter:
         y: 0
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 61, y: -36}
-        - {x: 27, y: -36}
-        - {x: 21, y: -47}
-        - {x: 21, y: -80}
-        - {x: 34, y: -92}
-        - {x: 106, y: -92}
-        - {x: 108, y: -85}
-        - {x: 108, y: -51}
-        - {x: 104, y: -49}
+      - - {x: -3, y: 28}
+        - {x: -37, y: 28}
+        - {x: -43, y: 17}
+        - {x: -43, y: -16}
+        - {x: -30, y: -28}
+        - {x: 42, y: -28}
+        - {x: 44, y: -21}
+        - {x: 44, y: 13}
+        - {x: 40, y: 15}
     - name: spritesheet_items_22
       rect:
         serializedVersion: 2
@@ -491,18 +491,18 @@ TextureImporter:
         y: 0
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 40, y: -38}
-        - {x: 27, y: -55}
-        - {x: 27, y: -68}
-        - {x: 54, y: -90}
-        - {x: 69, y: -90}
-        - {x: 101, y: -73}
-        - {x: 101, y: -53}
-        - {x: 88, y: -38}
+      - - {x: -24, y: 26}
+        - {x: -37, y: 9}
+        - {x: -37, y: -4}
+        - {x: -10, y: -26}
+        - {x: 5, y: -26}
+        - {x: 37, y: -9}
+        - {x: 37, y: 11}
+        - {x: 24, y: 26}
     - name: spritesheet_items_23
       rect:
         serializedVersion: 2
@@ -510,18 +510,18 @@ TextureImporter:
         y: 0
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 38, y: -30}
-        - {x: 30, y: -44}
-        - {x: 30, y: -90}
-        - {x: 40, y: -98}
-        - {x: 83, y: -98}
-        - {x: 98, y: -87}
-        - {x: 98, y: -46}
-        - {x: 93, y: -30}
+      - - {x: -26, y: 34}
+        - {x: -34, y: 20}
+        - {x: -34, y: -26}
+        - {x: -24, y: -34}
+        - {x: 19, y: -34}
+        - {x: 34, y: -23}
+        - {x: 34, y: 18}
+        - {x: 29, y: 34}
     outline: []
   spritePackingTag: 
   userData: 

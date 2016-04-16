@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 60e1a3ecd26e24c3c91da1812bc0d116
-timeCreated: 1460807269
+timeCreated: 1460809282
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -129,15 +129,15 @@ TextureImporter:
         y: 1920
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 0, y: 0}
-        - {x: 0, y: -128}
-        - {x: 126, y: -128}
-        - {x: 128, y: -125}
-        - {x: 128, y: 0}
+      - - {x: -64, y: 64}
+        - {x: -64, y: -64}
+        - {x: 62, y: -64}
+        - {x: 64, y: -61}
+        - {x: 64, y: 64}
     - name: spritesheet_tiles_1
       rect:
         serializedVersion: 2
@@ -145,15 +145,15 @@ TextureImporter:
         y: 1920
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 27, y: 0}
-        - {x: 0, y: -6}
-        - {x: 0, y: -128}
-        - {x: 128, y: -128}
-        - {x: 128, y: 0}
+      - - {x: -37, y: 64}
+        - {x: -64, y: 58}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: 64}
     - name: spritesheet_tiles_2
       rect:
         serializedVersion: 2
@@ -161,18 +161,18 @@ TextureImporter:
         y: 1920
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 45, y: -97}
-        - {x: 20, y: -110}
-        - {x: 0, y: -125}
-        - {x: 0, y: -128}
-        - {x: 128, y: -128}
-        - {x: 128, y: -125}
-        - {x: 90, y: -98}
-        - {x: 84, y: -97}
+      - - {x: -19, y: -33}
+        - {x: -44, y: -46}
+        - {x: -64, y: -61}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: -61}
+        - {x: 26, y: -34}
+        - {x: 20, y: -33}
     - name: spritesheet_tiles_3
       rect:
         serializedVersion: 2
@@ -180,16 +180,16 @@ TextureImporter:
         y: 1920
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 44, y: -35}
-        - {x: 0, y: -43}
-        - {x: 0, y: -128}
-        - {x: 128, y: -128}
-        - {x: 128, y: -37}
-        - {x: 119, y: -35}
+      - - {x: -20, y: 29}
+        - {x: -64, y: 21}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: 27}
+        - {x: 55, y: 29}
     - name: spritesheet_tiles_4
       rect:
         serializedVersion: 2
@@ -197,16 +197,16 @@ TextureImporter:
         y: 1920
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 0, y: 0}
-        - {x: 0, y: -48}
-        - {x: 123, y: -48}
-        - {x: 128, y: -44}
-        - {x: 128, y: -5}
-        - {x: 126, y: 0}
+      - - {x: -64, y: 64}
+        - {x: -64, y: 16}
+        - {x: 59, y: 16}
+        - {x: 64, y: 20}
+        - {x: 64, y: 59}
+        - {x: 62, y: 64}
     - name: spritesheet_tiles_5
       rect:
         serializedVersion: 2
@@ -214,14 +214,14 @@ TextureImporter:
         y: 1792
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 0, y: 0}
-        - {x: 0, y: -128}
-        - {x: 128, y: -128}
-        - {x: 128, y: 0}
+      - - {x: -64, y: 64}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: 64}
     - name: spritesheet_tiles_6
       rect:
         serializedVersion: 2
@@ -229,14 +229,14 @@ TextureImporter:
         y: 1792
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 0, y: 0}
-        - {x: 0, y: -128}
-        - {x: 128, y: -128}
-        - {x: 128, y: 0}
+      - - {x: -64, y: 64}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: 64}
     - name: spritesheet_tiles_7
       rect:
         serializedVersion: 2
@@ -244,23 +244,23 @@ TextureImporter:
         y: 1792
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 88, y: 0}
-        - {x: 75, y: 0}
-        - {x: 72, y: -4}
-        - {x: 64, y: 0}
-        - {x: 37, y: 0}
-        - {x: 7, y: -8}
-        - {x: 7, y: -77}
-        - {x: 10, y: -78}
-        - {x: 34, y: -128}
-        - {x: 62, y: -128}
-        - {x: 103, y: -99}
-        - {x: 120, y: -59}
-        - {x: 120, y: -25}
+      - - {x: 24, y: 64}
+        - {x: 11, y: 64}
+        - {x: 8, y: 60}
+        - {x: 0, y: 64}
+        - {x: -27, y: 64}
+        - {x: -57, y: 56}
+        - {x: -57, y: -13}
+        - {x: -54, y: -14}
+        - {x: -30, y: -64}
+        - {x: -2, y: -64}
+        - {x: 39, y: -35}
+        - {x: 56, y: 5}
+        - {x: 56, y: 39}
     - name: spritesheet_tiles_8
       rect:
         serializedVersion: 2
@@ -268,15 +268,15 @@ TextureImporter:
         y: 1792
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 27, y: 0}
-        - {x: 0, y: -6}
-        - {x: 0, y: -128}
-        - {x: 128, y: -128}
-        - {x: 128, y: 0}
+      - - {x: -37, y: 64}
+        - {x: -64, y: 58}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: 64}
     - name: spritesheet_tiles_9
       rect:
         serializedVersion: 2
@@ -284,16 +284,16 @@ TextureImporter:
         y: 1792
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 6, y: 0}
-        - {x: 0, y: -4}
-        - {x: 0, y: -128}
-        - {x: 128, y: -128}
-        - {x: 128, y: -1}
-        - {x: 126, y: 0}
+      - - {x: -58, y: 64}
+        - {x: -64, y: 60}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: 63}
+        - {x: 62, y: 64}
     - name: spritesheet_tiles_10
       rect:
         serializedVersion: 2
@@ -301,14 +301,14 @@ TextureImporter:
         y: 1664
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 0, y: 0}
-        - {x: 0, y: -128}
-        - {x: 128, y: -128}
-        - {x: 128, y: 0}
+      - - {x: -64, y: 64}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: 64}
     - name: spritesheet_tiles_11
       rect:
         serializedVersion: 2
@@ -316,18 +316,18 @@ TextureImporter:
         y: 1664
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 39, y: -47}
-        - {x: 39, y: -113}
-        - {x: 47, y: -118}
-        - {x: 78, y: -118}
-        - {x: 87, y: -115}
-        - {x: 89, y: -79}
-        - {x: 89, y: -51}
-        - {x: 85, y: -47}
+      - - {x: -25, y: 17}
+        - {x: -25, y: -49}
+        - {x: -17, y: -54}
+        - {x: 14, y: -54}
+        - {x: 23, y: -51}
+        - {x: 25, y: -15}
+        - {x: 25, y: 13}
+        - {x: 21, y: 17}
     - name: spritesheet_tiles_12
       rect:
         serializedVersion: 2
@@ -335,18 +335,18 @@ TextureImporter:
         y: 1664
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 25, y: 0}
-        - {x: 7, y: -14}
-        - {x: 7, y: -113}
-        - {x: 10, y: -128}
-        - {x: 118, y: -128}
-        - {x: 120, y: -119}
-        - {x: 120, y: -3}
-        - {x: 110, y: 0}
+      - - {x: -39, y: 64}
+        - {x: -57, y: 50}
+        - {x: -57, y: -49}
+        - {x: -54, y: -64}
+        - {x: 54, y: -64}
+        - {x: 56, y: -55}
+        - {x: 56, y: 61}
+        - {x: 46, y: 64}
     - name: spritesheet_tiles_13
       rect:
         serializedVersion: 2
@@ -354,14 +354,14 @@ TextureImporter:
         y: 1664
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 0, y: 0}
-        - {x: 0, y: -128}
-        - {x: 128, y: -128}
-        - {x: 128, y: 0}
+      - - {x: -64, y: 64}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: 64}
     - name: spritesheet_tiles_14
       rect:
         serializedVersion: 2
@@ -369,16 +369,16 @@ TextureImporter:
         y: 1664
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 4, y: 0}
-        - {x: 0, y: -4}
-        - {x: 0, y: -128}
-        - {x: 128, y: -128}
-        - {x: 128, y: -4}
-        - {x: 123, y: 0}
+      - - {x: -60, y: 64}
+        - {x: -64, y: 60}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: 60}
+        - {x: 59, y: 64}
     - name: spritesheet_tiles_15
       rect:
         serializedVersion: 2
@@ -386,16 +386,16 @@ TextureImporter:
         y: 1536
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 3, y: 0}
-        - {x: 0, y: -4}
-        - {x: 0, y: -125}
-        - {x: 3, y: -128}
-        - {x: 128, y: -128}
-        - {x: 128, y: 0}
+      - - {x: -61, y: 64}
+        - {x: -64, y: 60}
+        - {x: -64, y: -61}
+        - {x: -61, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: 64}
     - name: spritesheet_tiles_16
       rect:
         serializedVersion: 2
@@ -403,22 +403,22 @@ TextureImporter:
         y: 1536
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 79, y: -10}
-        - {x: 68, y: -10}
-        - {x: 60, y: -12}
-        - {x: 40, y: -36}
-        - {x: 39, y: -53}
-        - {x: 39, y: -108}
-        - {x: 51, y: -118}
-        - {x: 77, y: -118}
-        - {x: 87, y: -115}
-        - {x: 89, y: -87}
-        - {x: 89, y: -51}
-        - {x: 87, y: -37}
+      - - {x: 15, y: 54}
+        - {x: 4, y: 54}
+        - {x: -4, y: 52}
+        - {x: -24, y: 28}
+        - {x: -25, y: 11}
+        - {x: -25, y: -44}
+        - {x: -13, y: -54}
+        - {x: 13, y: -54}
+        - {x: 23, y: -51}
+        - {x: 25, y: -23}
+        - {x: 25, y: 13}
+        - {x: 23, y: 27}
     - name: spritesheet_tiles_17
       rect:
         serializedVersion: 2
@@ -426,16 +426,16 @@ TextureImporter:
         y: 1536
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 6, y: 0}
-        - {x: 0, y: -4}
-        - {x: 0, y: -128}
-        - {x: 128, y: -128}
-        - {x: 128, y: -2}
-        - {x: 124, y: 0}
+      - - {x: -58, y: 64}
+        - {x: -64, y: 60}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: 62}
+        - {x: 60, y: 64}
     - name: spritesheet_tiles_18
       rect:
         serializedVersion: 2
@@ -443,14 +443,14 @@ TextureImporter:
         y: 1536
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 0, y: 0}
-        - {x: 0, y: -128}
-        - {x: 128, y: -128}
-        - {x: 128, y: 0}
+      - - {x: -64, y: 64}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: 64}
     - name: spritesheet_tiles_19
       rect:
         serializedVersion: 2
@@ -458,16 +458,16 @@ TextureImporter:
         y: 1536
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 4, y: 0}
-        - {x: 0, y: -4}
-        - {x: 0, y: -127}
-        - {x: 1, y: -128}
-        - {x: 128, y: -128}
-        - {x: 128, y: 0}
+      - - {x: -60, y: 64}
+        - {x: -64, y: 60}
+        - {x: -64, y: -63}
+        - {x: -63, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: 64}
     - name: spritesheet_tiles_20
       rect:
         serializedVersion: 2
@@ -475,15 +475,15 @@ TextureImporter:
         y: 1408
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 0, y: 0}
-        - {x: 0, y: -126}
-        - {x: 1, y: -128}
-        - {x: 128, y: -128}
-        - {x: 128, y: 0}
+      - - {x: -64, y: 64}
+        - {x: -64, y: -62}
+        - {x: -63, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: 64}
     - name: spritesheet_tiles_21
       rect:
         serializedVersion: 2
@@ -491,18 +491,18 @@ TextureImporter:
         y: 1408
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 50, y: -10}
-        - {x: 39, y: -47}
-        - {x: 39, y: -108}
-        - {x: 52, y: -118}
-        - {x: 85, y: -118}
-        - {x: 89, y: -110}
-        - {x: 89, y: -36}
-        - {x: 68, y: -10}
+      - - {x: -14, y: 54}
+        - {x: -25, y: 17}
+        - {x: -25, y: -44}
+        - {x: -12, y: -54}
+        - {x: 21, y: -54}
+        - {x: 25, y: -46}
+        - {x: 25, y: 28}
+        - {x: 4, y: 54}
     - name: spritesheet_tiles_22
       rect:
         serializedVersion: 2
@@ -510,19 +510,19 @@ TextureImporter:
         y: 1408
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 97, y: 0}
-        - {x: 41, y: 0}
-        - {x: 0, y: -17}
-        - {x: 0, y: -96}
-        - {x: 50, y: -128}
-        - {x: 78, y: -128}
-        - {x: 122, y: -88}
-        - {x: 128, y: -83}
-        - {x: 128, y: -12}
+      - - {x: 33, y: 64}
+        - {x: -23, y: 64}
+        - {x: -64, y: 47}
+        - {x: -64, y: -32}
+        - {x: -14, y: -64}
+        - {x: 14, y: -64}
+        - {x: 58, y: -24}
+        - {x: 64, y: -19}
+        - {x: 64, y: 52}
     - name: spritesheet_tiles_23
       rect:
         serializedVersion: 2
@@ -530,14 +530,14 @@ TextureImporter:
         y: 1408
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 0, y: 0}
-        - {x: 0, y: -128}
-        - {x: 128, y: -128}
-        - {x: 128, y: 0}
+      - - {x: -64, y: 64}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: 64}
     - name: spritesheet_tiles_24
       rect:
         serializedVersion: 2
@@ -545,15 +545,15 @@ TextureImporter:
         y: 1408
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 0, y: 0}
-        - {x: 0, y: -126}
-        - {x: 1, y: -128}
-        - {x: 128, y: -128}
-        - {x: 128, y: 0}
+      - - {x: -64, y: 64}
+        - {x: -64, y: -62}
+        - {x: -63, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: 64}
     - name: spritesheet_tiles_25
       rect:
         serializedVersion: 2
@@ -561,16 +561,16 @@ TextureImporter:
         y: 1280
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 6, y: 0}
-        - {x: 0, y: -4}
-        - {x: 0, y: -128}
-        - {x: 128, y: -128}
-        - {x: 128, y: -2}
-        - {x: 124, y: 0}
+      - - {x: -58, y: 64}
+        - {x: -64, y: 60}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: 62}
+        - {x: 60, y: 64}
     - name: spritesheet_tiles_26
       rect:
         serializedVersion: 2
@@ -578,16 +578,16 @@ TextureImporter:
         y: 1280
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 24, y: -78}
-        - {x: 0, y: -98}
-        - {x: 0, y: -128}
-        - {x: 128, y: -128}
-        - {x: 128, y: -88}
-        - {x: 103, y: -78}
+      - - {x: -40, y: -14}
+        - {x: -64, y: -34}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: -24}
+        - {x: 39, y: -14}
     - name: spritesheet_tiles_27
       rect:
         serializedVersion: 2
@@ -595,18 +595,18 @@ TextureImporter:
         y: 1280
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 13, y: -53}
-        - {x: 0, y: -83}
-        - {x: 0, y: -112}
-        - {x: 6, y: -128}
-        - {x: 124, y: -128}
-        - {x: 128, y: -122}
-        - {x: 128, y: -81}
-        - {x: 87, y: -53}
+      - - {x: -51, y: 11}
+        - {x: -64, y: -19}
+        - {x: -64, y: -48}
+        - {x: -58, y: -64}
+        - {x: 60, y: -64}
+        - {x: 64, y: -58}
+        - {x: 64, y: -17}
+        - {x: 23, y: 11}
     - name: spritesheet_tiles_28
       rect:
         serializedVersion: 2
@@ -614,19 +614,19 @@ TextureImporter:
         y: 1280
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 66, y: -58}
-        - {x: 32, y: -58}
-        - {x: 32, y: -105}
-        - {x: 40, y: -124}
-        - {x: 42, y: -128}
-        - {x: 85, y: -128}
-        - {x: 86, y: -127}
-        - {x: 96, y: -99}
-        - {x: 71, y: -59}
+      - - {x: 2, y: 6}
+        - {x: -32, y: 6}
+        - {x: -32, y: -41}
+        - {x: -24, y: -60}
+        - {x: -22, y: -64}
+        - {x: 21, y: -64}
+        - {x: 22, y: -63}
+        - {x: 32, y: -35}
+        - {x: 7, y: 5}
     - name: spritesheet_tiles_29
       rect:
         serializedVersion: 2
@@ -634,16 +634,16 @@ TextureImporter:
         y: 1280
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 4, y: 0}
-        - {x: 0, y: -4}
-        - {x: 0, y: -127}
-        - {x: 1, y: -128}
-        - {x: 128, y: -128}
-        - {x: 128, y: 0}
+      - - {x: -60, y: 64}
+        - {x: -64, y: 60}
+        - {x: -64, y: -63}
+        - {x: -63, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: 64}
     - name: spritesheet_tiles_30
       rect:
         serializedVersion: 2
@@ -651,14 +651,14 @@ TextureImporter:
         y: 1152
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 0, y: 0}
-        - {x: 0, y: -128}
-        - {x: 128, y: -128}
-        - {x: 128, y: 0}
+      - - {x: -64, y: 64}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: 64}
     - name: spritesheet_tiles_31
       rect:
         serializedVersion: 2
@@ -666,16 +666,16 @@ TextureImporter:
         y: 1152
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 36, y: -42}
-        - {x: 0, y: -93}
-        - {x: 0, y: -128}
-        - {x: 128, y: -128}
-        - {x: 128, y: -89}
-        - {x: 90, y: -42}
+      - - {x: -28, y: 22}
+        - {x: -64, y: -29}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: -25}
+        - {x: 26, y: 22}
     - name: spritesheet_tiles_32
       rect:
         serializedVersion: 2
@@ -683,20 +683,20 @@ TextureImporter:
         y: 1152
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 9, y: -69}
-        - {x: 9, y: -80}
-        - {x: 12, y: -92}
-        - {x: 19, y: -109}
-        - {x: 22, y: -115}
-        - {x: 49, y: -128}
-        - {x: 77, y: -128}
-        - {x: 108, y: -115}
-        - {x: 119, y: -95}
-        - {x: 119, y: -69}
+      - - {x: -55, y: -5}
+        - {x: -55, y: -16}
+        - {x: -52, y: -28}
+        - {x: -45, y: -45}
+        - {x: -42, y: -51}
+        - {x: -15, y: -64}
+        - {x: 13, y: -64}
+        - {x: 44, y: -51}
+        - {x: 55, y: -31}
+        - {x: 55, y: -5}
     - name: spritesheet_tiles_33
       rect:
         serializedVersion: 2
@@ -704,14 +704,14 @@ TextureImporter:
         y: 1152
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 0, y: -31}
-        - {x: 0, y: -128}
-        - {x: 128, y: -128}
-        - {x: 128, y: -31}
+      - - {x: -64, y: 33}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: 33}
     - name: spritesheet_tiles_34
       rect:
         serializedVersion: 2
@@ -719,15 +719,15 @@ TextureImporter:
         y: 1152
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 0, y: 0}
-        - {x: 0, y: -128}
-        - {x: 127, y: -128}
-        - {x: 128, y: -126}
-        - {x: 128, y: 0}
+      - - {x: -64, y: 64}
+        - {x: -64, y: -64}
+        - {x: 63, y: -64}
+        - {x: 64, y: -62}
+        - {x: 64, y: 64}
     - name: spritesheet_tiles_35
       rect:
         serializedVersion: 2
@@ -735,15 +735,15 @@ TextureImporter:
         y: 1024
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 0, y: 0}
-        - {x: 0, y: -128}
-        - {x: 126, y: -128}
-        - {x: 128, y: -127}
-        - {x: 128, y: 0}
+      - - {x: -64, y: 64}
+        - {x: -64, y: -64}
+        - {x: 62, y: -64}
+        - {x: 64, y: -63}
+        - {x: 64, y: 64}
     - name: spritesheet_tiles_36
       rect:
         serializedVersion: 2
@@ -751,16 +751,16 @@ TextureImporter:
         y: 1024
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 24, y: -78}
-        - {x: 0, y: -98}
-        - {x: 0, y: -128}
-        - {x: 128, y: -128}
-        - {x: 128, y: -88}
-        - {x: 103, y: -78}
+      - - {x: -40, y: -14}
+        - {x: -64, y: -34}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: -24}
+        - {x: 39, y: -14}
     - name: spritesheet_tiles_37
       rect:
         serializedVersion: 2
@@ -768,18 +768,18 @@ TextureImporter:
         y: 1024
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 47, y: -71}
-        - {x: 26, y: -82}
-        - {x: 26, y: -107}
-        - {x: 50, y: -128}
-        - {x: 79, y: -128}
-        - {x: 102, y: -110}
-        - {x: 102, y: -88}
-        - {x: 94, y: -71}
+      - - {x: -17, y: -7}
+        - {x: -38, y: -18}
+        - {x: -38, y: -43}
+        - {x: -14, y: -64}
+        - {x: 15, y: -64}
+        - {x: 38, y: -46}
+        - {x: 38, y: -24}
+        - {x: 30, y: -7}
     - name: spritesheet_tiles_38
       rect:
         serializedVersion: 2
@@ -787,14 +787,14 @@ TextureImporter:
         y: 1024
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 0, y: -31}
-        - {x: 0, y: -128}
-        - {x: 128, y: -128}
-        - {x: 128, y: -31}
+      - - {x: -64, y: 33}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: 33}
     - name: spritesheet_tiles_39
       rect:
         serializedVersion: 2
@@ -802,18 +802,18 @@ TextureImporter:
         y: 1024
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 35, y: 0}
-        - {x: 0, y: -15}
-        - {x: 0, y: -94}
-        - {x: 50, y: -128}
-        - {x: 79, y: -128}
-        - {x: 128, y: -83}
-        - {x: 128, y: -12}
-        - {x: 106, y: 0}
+      - - {x: -29, y: 64}
+        - {x: -64, y: 49}
+        - {x: -64, y: -30}
+        - {x: -14, y: -64}
+        - {x: 15, y: -64}
+        - {x: 64, y: -19}
+        - {x: 64, y: 52}
+        - {x: 42, y: 64}
     - name: spritesheet_tiles_40
       rect:
         serializedVersion: 2
@@ -821,14 +821,14 @@ TextureImporter:
         y: 896
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 0, y: 0}
-        - {x: 0, y: -128}
-        - {x: 128, y: -128}
-        - {x: 128, y: 0}
+      - - {x: -64, y: 64}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: 64}
     - name: spritesheet_tiles_41
       rect:
         serializedVersion: 2
@@ -836,16 +836,16 @@ TextureImporter:
         y: 896
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 36, y: -42}
-        - {x: 0, y: -93}
-        - {x: 0, y: -128}
-        - {x: 128, y: -128}
-        - {x: 128, y: -89}
-        - {x: 90, y: -42}
+      - - {x: -28, y: 22}
+        - {x: -64, y: -29}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: -25}
+        - {x: 26, y: 22}
     - name: spritesheet_tiles_42
       rect:
         serializedVersion: 2
@@ -853,22 +853,22 @@ TextureImporter:
         y: 896
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 90, y: -76}
-        - {x: 77, y: -71}
-        - {x: 54, y: -71}
-        - {x: 46, y: -72}
-        - {x: 27, y: -85}
-        - {x: 26, y: -90}
-        - {x: 26, y: -107}
-        - {x: 50, y: -128}
-        - {x: 78, y: -128}
-        - {x: 102, y: -105}
-        - {x: 102, y: -92}
-        - {x: 100, y: -85}
+      - - {x: 26, y: -12}
+        - {x: 13, y: -7}
+        - {x: -10, y: -7}
+        - {x: -18, y: -8}
+        - {x: -37, y: -21}
+        - {x: -38, y: -26}
+        - {x: -38, y: -43}
+        - {x: -14, y: -64}
+        - {x: 14, y: -64}
+        - {x: 38, y: -41}
+        - {x: 38, y: -28}
+        - {x: 36, y: -21}
     - name: spritesheet_tiles_43
       rect:
         serializedVersion: 2
@@ -876,17 +876,17 @@ TextureImporter:
         y: 896
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 28, y: -53}
-        - {x: 0, y: -77}
-        - {x: 0, y: -128}
-        - {x: 128, y: -128}
-        - {x: 128, y: -70}
-        - {x: 105, y: -60}
-        - {x: 90, y: -53}
+      - - {x: -36, y: 11}
+        - {x: -64, y: -13}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: -6}
+        - {x: 41, y: 4}
+        - {x: 26, y: 11}
     - name: spritesheet_tiles_44
       rect:
         serializedVersion: 2
@@ -894,15 +894,15 @@ TextureImporter:
         y: 768
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 0, y: 0}
-        - {x: 0, y: -128}
-        - {x: 126, y: -128}
-        - {x: 128, y: -127}
-        - {x: 128, y: 0}
+      - - {x: -64, y: 64}
+        - {x: -64, y: -64}
+        - {x: 62, y: -64}
+        - {x: 64, y: -63}
+        - {x: 64, y: 64}
     - name: spritesheet_tiles_45
       rect:
         serializedVersion: 2
@@ -910,16 +910,16 @@ TextureImporter:
         y: 768
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 24, y: -78}
-        - {x: 0, y: -98}
-        - {x: 0, y: -128}
-        - {x: 128, y: -128}
-        - {x: 128, y: -88}
-        - {x: 103, y: -78}
+      - - {x: -40, y: -14}
+        - {x: -64, y: -34}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: -24}
+        - {x: 39, y: -14}
     - name: spritesheet_tiles_46
       rect:
         serializedVersion: 2
@@ -927,15 +927,15 @@ TextureImporter:
         y: 768
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 0, y: 0}
-        - {x: 0, y: -128}
-        - {x: 127, y: -128}
-        - {x: 128, y: -127}
-        - {x: 128, y: 0}
+      - - {x: -64, y: 64}
+        - {x: -64, y: -64}
+        - {x: 63, y: -64}
+        - {x: 64, y: -63}
+        - {x: 64, y: 64}
     - name: spritesheet_tiles_47
       rect:
         serializedVersion: 2
@@ -943,14 +943,14 @@ TextureImporter:
         y: 768
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 0, y: 0}
-        - {x: 0, y: -128}
-        - {x: 128, y: -128}
-        - {x: 128, y: 0}
+      - - {x: -64, y: 64}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: 64}
     - name: spritesheet_tiles_48
       rect:
         serializedVersion: 2
@@ -958,17 +958,17 @@ TextureImporter:
         y: 640
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 9, y: -11}
-        - {x: 9, y: -114}
-        - {x: 16, y: -128}
-        - {x: 103, y: -128}
-        - {x: 118, y: -102}
-        - {x: 118, y: -32}
-        - {x: 105, y: -11}
+      - - {x: -55, y: 53}
+        - {x: -55, y: -50}
+        - {x: -48, y: -64}
+        - {x: 39, y: -64}
+        - {x: 54, y: -38}
+        - {x: 54, y: 32}
+        - {x: 41, y: 53}
     - name: spritesheet_tiles_49
       rect:
         serializedVersion: 2
@@ -976,16 +976,16 @@ TextureImporter:
         y: 640
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 36, y: -42}
-        - {x: 0, y: -93}
-        - {x: 0, y: -128}
-        - {x: 128, y: -128}
-        - {x: 128, y: -89}
-        - {x: 90, y: -42}
+      - - {x: -28, y: 22}
+        - {x: -64, y: -29}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: -25}
+        - {x: 26, y: 22}
     - name: spritesheet_tiles_50
       rect:
         serializedVersion: 2
@@ -993,15 +993,15 @@ TextureImporter:
         y: 640
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 0, y: 0}
-        - {x: 0, y: -128}
-        - {x: 127, y: -128}
-        - {x: 128, y: -126}
-        - {x: 128, y: 0}
+      - - {x: -64, y: 64}
+        - {x: -64, y: -64}
+        - {x: 63, y: -64}
+        - {x: 64, y: -62}
+        - {x: 64, y: 64}
     - name: spritesheet_tiles_51
       rect:
         serializedVersion: 2
@@ -1009,16 +1009,16 @@ TextureImporter:
         y: 640
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 23, y: -53}
-        - {x: 0, y: -77}
-        - {x: 0, y: -128}
-        - {x: 128, y: -128}
-        - {x: 128, y: -82}
-        - {x: 111, y: -53}
+      - - {x: -41, y: 11}
+        - {x: -64, y: -13}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: -18}
+        - {x: 47, y: 11}
     - name: spritesheet_tiles_52
       rect:
         serializedVersion: 2
@@ -1026,17 +1026,17 @@ TextureImporter:
         y: 512
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 9, y: -11}
-        - {x: 9, y: -114}
-        - {x: 16, y: -128}
-        - {x: 103, y: -128}
-        - {x: 118, y: -102}
-        - {x: 118, y: -32}
-        - {x: 105, y: -11}
+      - - {x: -55, y: 53}
+        - {x: -55, y: -50}
+        - {x: -48, y: -64}
+        - {x: 39, y: -64}
+        - {x: 54, y: -38}
+        - {x: 54, y: 32}
+        - {x: 41, y: 53}
     - name: spritesheet_tiles_53
       rect:
         serializedVersion: 2
@@ -1044,16 +1044,16 @@ TextureImporter:
         y: 512
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 24, y: -78}
-        - {x: 0, y: -98}
-        - {x: 0, y: -128}
-        - {x: 128, y: -128}
-        - {x: 128, y: -88}
-        - {x: 103, y: -78}
+      - - {x: -40, y: -14}
+        - {x: -64, y: -34}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: -24}
+        - {x: 39, y: -14}
     - name: spritesheet_tiles_54
       rect:
         serializedVersion: 2
@@ -1061,15 +1061,15 @@ TextureImporter:
         y: 512
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 0, y: 0}
-        - {x: 0, y: -128}
-        - {x: 127, y: -128}
-        - {x: 128, y: -126}
-        - {x: 128, y: 0}
+      - - {x: -64, y: 64}
+        - {x: -64, y: -64}
+        - {x: 63, y: -64}
+        - {x: 64, y: -62}
+        - {x: 64, y: 64}
     - name: spritesheet_tiles_55
       rect:
         serializedVersion: 2
@@ -1077,14 +1077,14 @@ TextureImporter:
         y: 512
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 0, y: 0}
-        - {x: 0, y: -128}
-        - {x: 128, y: -128}
-        - {x: 128, y: 0}
+      - - {x: -64, y: 64}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: 64}
     - name: spritesheet_tiles_56
       rect:
         serializedVersion: 2
@@ -1092,17 +1092,17 @@ TextureImporter:
         y: 384
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 95, y: -3}
-        - {x: 36, y: -3}
-        - {x: 5, y: -13}
-        - {x: 5, y: -126}
-        - {x: 121, y: -126}
-        - {x: 121, y: -36}
-        - {x: 98, y: -5}
+      - - {x: 31, y: 61}
+        - {x: -28, y: 61}
+        - {x: -59, y: 51}
+        - {x: -59, y: -62}
+        - {x: 57, y: -62}
+        - {x: 57, y: 28}
+        - {x: 34, y: 59}
     - name: spritesheet_tiles_57
       rect:
         serializedVersion: 2
@@ -1110,16 +1110,16 @@ TextureImporter:
         y: 384
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 36, y: -42}
-        - {x: 0, y: -93}
-        - {x: 0, y: -128}
-        - {x: 128, y: -128}
-        - {x: 128, y: -89}
-        - {x: 90, y: -42}
+      - - {x: -28, y: 22}
+        - {x: -64, y: -29}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: -25}
+        - {x: 26, y: 22}
     - name: spritesheet_tiles_58
       rect:
         serializedVersion: 2
@@ -1127,15 +1127,15 @@ TextureImporter:
         y: 384
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 0, y: 0}
-        - {x: 0, y: -128}
-        - {x: 127, y: -128}
-        - {x: 128, y: -126}
-        - {x: 128, y: 0}
+      - - {x: -64, y: 64}
+        - {x: -64, y: -64}
+        - {x: 63, y: -64}
+        - {x: 64, y: -62}
+        - {x: 64, y: 64}
     - name: spritesheet_tiles_59
       rect:
         serializedVersion: 2
@@ -1143,19 +1143,19 @@ TextureImporter:
         y: 384
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 45, y: -6}
-        - {x: 45, y: -124}
-        - {x: 48, y: -128}
-        - {x: 75, y: -128}
-        - {x: 84, y: -124}
-        - {x: 84, y: -7}
-        - {x: 78, y: 0}
-        - {x: 53, y: 0}
-        - {x: 49, y: -1}
+      - - {x: -19, y: 58}
+        - {x: -19, y: -60}
+        - {x: -16, y: -64}
+        - {x: 11, y: -64}
+        - {x: 20, y: -60}
+        - {x: 20, y: 57}
+        - {x: 14, y: 64}
+        - {x: -11, y: 64}
+        - {x: -15, y: 63}
     - name: spritesheet_tiles_60
       rect:
         serializedVersion: 2
@@ -1163,19 +1163,19 @@ TextureImporter:
         y: 256
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 84, y: 0}
-        - {x: 51, y: 0}
-        - {x: 18, y: -11}
-        - {x: 2, y: -71}
-        - {x: 2, y: -128}
-        - {x: 125, y: -128}
-        - {x: 126, y: -127}
-        - {x: 126, y: -97}
-        - {x: 114, y: -24}
+      - - {x: 20, y: 64}
+        - {x: -13, y: 64}
+        - {x: -46, y: 53}
+        - {x: -62, y: -7}
+        - {x: -62, y: -64}
+        - {x: 61, y: -64}
+        - {x: 62, y: -63}
+        - {x: 62, y: -33}
+        - {x: 50, y: 40}
     - name: spritesheet_tiles_61
       rect:
         serializedVersion: 2
@@ -1183,14 +1183,14 @@ TextureImporter:
         y: 256
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 0, y: -34}
-        - {x: 0, y: -128}
-        - {x: 128, y: -128}
-        - {x: 128, y: -34}
+      - - {x: -64, y: 30}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: 30}
     - name: spritesheet_tiles_62
       rect:
         serializedVersion: 2
@@ -1198,15 +1198,15 @@ TextureImporter:
         y: 256
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 97, y: -34}
-        - {x: 5, y: -89}
-        - {x: 5, y: -128}
-        - {x: 127, y: -128}
-        - {x: 127, y: -34}
+      - - {x: 33, y: 30}
+        - {x: -59, y: -25}
+        - {x: -59, y: -64}
+        - {x: 63, y: -64}
+        - {x: 63, y: 30}
     - name: spritesheet_tiles_63
       rect:
         serializedVersion: 2
@@ -1214,18 +1214,18 @@ TextureImporter:
         y: 256
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 48, y: -22}
-        - {x: 25, y: -37}
-        - {x: 25, y: -124}
-        - {x: 38, y: -128}
-        - {x: 96, y: -128}
-        - {x: 104, y: -97}
-        - {x: 104, y: -23}
-        - {x: 103, y: -22}
+      - - {x: -16, y: 42}
+        - {x: -39, y: 27}
+        - {x: -39, y: -60}
+        - {x: -26, y: -64}
+        - {x: 32, y: -64}
+        - {x: 40, y: -33}
+        - {x: 40, y: 41}
+        - {x: 39, y: 42}
     - name: spritesheet_tiles_64
       rect:
         serializedVersion: 2
@@ -1233,18 +1233,18 @@ TextureImporter:
         y: 128
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 107, y: 0}
-        - {x: 32, y: 0}
-        - {x: 20, y: -13}
-        - {x: 2, y: -74}
-        - {x: 2, y: -128}
-        - {x: 126, y: -128}
-        - {x: 126, y: -41}
-        - {x: 120, y: -2}
+      - - {x: 43, y: 64}
+        - {x: -32, y: 64}
+        - {x: -44, y: 51}
+        - {x: -62, y: -10}
+        - {x: -62, y: -64}
+        - {x: 62, y: -64}
+        - {x: 62, y: 23}
+        - {x: 56, y: 62}
     - name: spritesheet_tiles_65
       rect:
         serializedVersion: 2
@@ -1252,14 +1252,14 @@ TextureImporter:
         y: 128
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 0, y: -60}
-        - {x: 0, y: -128}
-        - {x: 128, y: -128}
-        - {x: 128, y: -60}
+      - - {x: -64, y: 4}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: 4}
     - name: spritesheet_tiles_66
       rect:
         serializedVersion: 2
@@ -1267,18 +1267,18 @@ TextureImporter:
         y: 128
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 77, y: -18}
-        - {x: 44, y: -18}
-        - {x: 6, y: -96}
-        - {x: 5, y: -102}
-        - {x: 5, y: -128}
-        - {x: 123, y: -128}
-        - {x: 123, y: -101}
-        - {x: 118, y: -91}
+      - - {x: 13, y: 46}
+        - {x: -20, y: 46}
+        - {x: -58, y: -32}
+        - {x: -59, y: -38}
+        - {x: -59, y: -64}
+        - {x: 59, y: -64}
+        - {x: 59, y: -37}
+        - {x: 54, y: -27}
     - name: spritesheet_tiles_67
       rect:
         serializedVersion: 2
@@ -1286,18 +1286,18 @@ TextureImporter:
         y: 128
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 52, y: -49}
-        - {x: 33, y: -60}
-        - {x: 0, y: -97}
-        - {x: 0, y: -128}
-        - {x: 128, y: -128}
-        - {x: 128, y: -95}
-        - {x: 119, y: -56}
-        - {x: 95, y: -49}
+      - - {x: -12, y: 15}
+        - {x: -31, y: 4}
+        - {x: -64, y: -33}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: -31}
+        - {x: 55, y: 8}
+        - {x: 31, y: 15}
     - name: spritesheet_tiles_68
       rect:
         serializedVersion: 2
@@ -1305,16 +1305,16 @@ TextureImporter:
         y: 0
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 44, y: -35}
-        - {x: 0, y: -43}
-        - {x: 0, y: -128}
-        - {x: 128, y: -128}
-        - {x: 128, y: -37}
-        - {x: 119, y: -35}
+      - - {x: -20, y: 29}
+        - {x: -64, y: 21}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: 27}
+        - {x: 55, y: 29}
     - name: spritesheet_tiles_69
       rect:
         serializedVersion: 2
@@ -1322,16 +1322,16 @@ TextureImporter:
         y: 0
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 109, y: -62}
-        - {x: 0, y: -62}
-        - {x: 0, y: -128}
-        - {x: 128, y: -128}
-        - {x: 128, y: -117}
-        - {x: 111, y: -65}
+      - - {x: 45, y: 2}
+        - {x: -64, y: 2}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: -53}
+        - {x: 47, y: -1}
     - name: spritesheet_tiles_70
       rect:
         serializedVersion: 2
@@ -1339,18 +1339,18 @@ TextureImporter:
         y: 0
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 37, y: -34}
-        - {x: 11, y: -34}
-        - {x: 1, y: -44}
-        - {x: 1, y: -111}
-        - {x: 4, y: -128}
-        - {x: 123, y: -128}
-        - {x: 123, y: -97}
-        - {x: 112, y: -83}
+      - - {x: -27, y: 30}
+        - {x: -53, y: 30}
+        - {x: -63, y: 20}
+        - {x: -63, y: -47}
+        - {x: -60, y: -64}
+        - {x: 59, y: -64}
+        - {x: 59, y: -33}
+        - {x: 48, y: -19}
     - name: spritesheet_tiles_71
       rect:
         serializedVersion: 2
@@ -1358,17 +1358,17 @@ TextureImporter:
         y: 0
         width: 128
         height: 128
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 0, y: 0}
-        - {x: 0, y: -32}
-        - {x: 4, y: -39}
-        - {x: 119, y: -39}
-        - {x: 128, y: -38}
-        - {x: 128, y: -4}
-        - {x: 126, y: 0}
+      - - {x: -64, y: 64}
+        - {x: -64, y: 32}
+        - {x: -60, y: 25}
+        - {x: 55, y: 25}
+        - {x: 64, y: 26}
+        - {x: 64, y: 60}
+        - {x: 62, y: 64}
     outline: []
   spritePackingTag: 
   userData: 
