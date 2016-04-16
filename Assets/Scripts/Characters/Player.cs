@@ -3,14 +3,11 @@ using System.Collections;
 
 public class Player : Character {
 
-	// Movement speed, increase or decrease for faster movement
-	public float speed = 3.0f;
-
 	// Force at which the player can jump
-	public float jumpForce = 3.0f;
+	float jumpForce = 3.0f;
 
 	bool playerIsFalling = false;
-	Vector3 movement;
+	public Vector3 movement;
 
 	void Update () {
 

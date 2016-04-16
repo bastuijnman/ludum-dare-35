@@ -3,8 +3,6 @@ using System.Collections;
 
 public class SpriteImage : MonoBehaviour
 {
-
-    private Sprite[] spriteSheet = Resources.LoadAll<Sprite>("Tilesets/spritesheet_items");
     private SpriteRenderer spriteRenderer;
 
     public Sprite spriteImage;
