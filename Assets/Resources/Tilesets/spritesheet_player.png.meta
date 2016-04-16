@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 6774b09d750c14c3583c5f1f2bc873b7
-timeCreated: 1460840398
+timeCreated: 1460845790
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -10,6 +10,7 @@ TextureImporter:
     21300006: spritesheet_player_angry
     21300008: spritesheet_player_sleep
     21300010: spritesheet_player_ball_happy
+    21300012: spritesheet_player_0
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -50,7 +51,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 896, z: 384, w: 0}
-  spritePixelsToUnits: 0.001
+  spritePixelsToUnits: 128
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
@@ -160,6 +161,24 @@ TextureImporter:
         - {x: 64, y: -44}
         - {x: 64, y: 56}
         - {x: 37, y: 64}
+    - name: spritesheet_player_0
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 640
+        width: 128
+        height: 384
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -62, y: 192}
+        - {x: -64, y: 191}
+        - {x: -64, y: -190}
+        - {x: -63, y: -192}
+        - {x: 64, y: -192}
+        - {x: 64, y: 190}
+        - {x: 63, y: 192}
     outline: []
   spritePackingTag: 
   userData: 
