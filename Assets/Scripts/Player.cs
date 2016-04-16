@@ -14,7 +14,7 @@ public class Player : MonoBehaviour {
 
 	bool playerIsFalling = false;
 	Vector3 movement;
-	CircleCollider2D playerCollider;
+	BoxCollider2D playerCollider;
 	Rigidbody2D playerBody;
 
 
@@ -24,10 +24,9 @@ public class Player : MonoBehaviour {
 		playerBody = gameObject.AddComponent<Rigidbody2D> ();
 
 		// Setup the 2D circle collider to detect collisions against the TileMap
-		playerCollider = gameObject.AddComponent<CircleCollider2D> ();
+		playerCollider = gameObject.AddComponent<BoxCollider2D> ();
 		playerCollider.offset = Vector3.zero;
-		playerCollider.radius = collisionRadius;
-		playerCollider.isTrigger = true;
+		//playerCollider.isTrigger = true;
 
 	}
 
