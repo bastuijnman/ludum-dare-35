@@ -4,15 +4,27 @@ using System.Collections;
 public class SpriteImage : MonoBehaviour
 {
 
+    private Sprite[] spriteSheet = Resources.LoadAll<Sprite>("Tilesets/spritesheet_items");
+    private SpriteRenderer spriteRenderer;
+
     public Sprite spriteImage;
 
-    private SpriteRenderer spriteRenderer;
+
+    void Start()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
 
     void Update()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>(); // we are accessing the SpriteRenderer that is attached to the Gameobject
-        if (spriteRenderer.sprite != spriteImage) // if the sprite on spriteRenderer is null then
-            spriteRenderer.sprite = spriteImage; // set the sprite to sprite1
+        if (spriteImage == null)
+        {
+            return;
+        }
+        if (spriteRenderer.sprite != spriteImage)
+        {
+            spriteRenderer.sprite = spriteImage;
+        }
     }
 
 }
