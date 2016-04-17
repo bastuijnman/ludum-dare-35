@@ -29,6 +29,12 @@ public sealed class GameSceneManager {
 		SceneManager.LoadScene (sceneList [sceneIndex]);
 	}
 
+	// Unloads and Loads the current scene to restart
+	public void RestartScene () {
+		SceneManager.UnloadScene (sceneList [sceneIndex]);
+		SceneManager.LoadScene (sceneList [sceneIndex]);
+	}
+
 	// Gets the singleton instance
 	public static GameSceneManager Instance {
 		get {
