@@ -8,6 +8,8 @@ public class HUD : MonoBehaviour {
 	private int seconds = 0;
 	private Timer levelTimer;
 
+	private bool showTransformOptions = false;
+
 	void Start () {
 
 		// Start a new Timer to keep the level time
@@ -22,6 +24,19 @@ public class HUD : MonoBehaviour {
 
 		// Create the timer label
 		GUI.Label (new Rect (10, 10, 100, 20), timerText);
+
+		if (showTransformOptions) {
+			new TransformButton ("transformation", 10, 0);
+			new TransformButton ("transformation", 120, 0);
+			new TransformButton ("transformation", 230, 0);
+			new TransformButton ("transformation", 340, 0);
+		}
+	}
+
+	void Update () {
+		if (Input.GetKeyDown(KeyCode.LeftShift)) {
+			showTransformOptions = true;
+		}
 	}
 
 	// Called when the Scene is destroyed
@@ -33,5 +48,11 @@ public class HUD : MonoBehaviour {
 	void OnTimerEvent (object source, ElapsedEventArgs e) {
 		seconds += 1;
 		timerText = seconds.ToString ();
+	}
+
+
+
+	private void StartTransformTimer () {
+		
 	}
 }
