@@ -3,36 +3,36 @@ using System.IO;
 
 public class TransformButton
 {
-	private Texture2D texture;
 
-	private Texture2D textureNormal;
-	private Texture2D textureFocus;
+	public int x { get; set; }
+	public int y { get; set; }
+	public bool focus { get; set; }
+	public string name { get; set; }
 
-	public TransformButton (string name, int x, int y)
+	// Actually creates the GUI button
+	public void Create ()
 	{
-		textureNormal = LoadTransformImage (name);
-		textureFocus = LoadTransformImage (name + "-focus");
+		if (focus) {
+			name = name + "-focus";
+		}
 
-		texture = textureNormal;
+		Texture2D texture = LoadTransformImage (name);
 		GUI.Button (new Rect (x, y, 100, 100), texture);
-
 	}
 
-	public void Focus () {
-		texture = textureFocus;
-	}
+	// Load an image and turn it into a texture
+	private Texture2D LoadTransformImage (string filename) {
+		
+		string path = "Assets/Resources/HUD/" + filename + ".png";
+		Texture2D texture = new Texture2D (100, 100);
 
-	public void Blur () {
-		texture = textureNormal;
-	}
-
-	private Texture2D LoadTransformImage (string name) {
-		Texture2D texture;
 		byte[] file;
 
-		file = File.ReadAllBytes ("Assets/Resources/HUD/" + name + ".png");
-		texture = new Texture2D (100, 100);
-		texture.LoadImage (file);
+		if (File.Exists (path)) {
+			file = File.ReadAllBytes (path);
+			texture.LoadImage (file);
+			texture.name = name;
+		}
 
 		return texture;
 

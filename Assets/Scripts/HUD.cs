@@ -6,7 +6,10 @@ public class HUD : MonoBehaviour {
 
 	private string timerText = "";
 	private int seconds = 0;
+	private int focusIndex = 0;
+
 	private Timer levelTimer;
+	private Timer hideTransformOptions;
 
 	private bool showTransformOptions = false;
 
@@ -17,6 +20,11 @@ public class HUD : MonoBehaviour {
 		levelTimer.Elapsed += new ElapsedEventHandler (OnTimerEvent);
 		levelTimer.Interval = 1000;
 		levelTimer.Start ();
+
+		// Keep reference to the hide timer
+		hideTransformOptions = new Timer ();
+		hideTransformOptions.Interval = 5000;
+		hideTransformOptions.Elapsed += new ElapsedEventHandler (OnHideTransformOptionsEvent);
 	}
 
 	// Handles creating the GUI elements
@@ -25,17 +33,31 @@ public class HUD : MonoBehaviour {
 		// Create the timer label
 		GUI.Label (new Rect (10, 10, 100, 20), timerText);
 
+		// Show transform options when needed
 		if (showTransformOptions) {
-			new TransformButton ("transformation", 10, 0);
-			new TransformButton ("transformation", 120, 0);
-			new TransformButton ("transformation", 230, 0);
-			new TransformButton ("transformation", 340, 0);
+			
+			// The whole .Create thing can be handled better via an own Configuration class in the constructor
+			TransformButton but1 = new TransformButton { name = "transformation", x = 10, y = 0, focus = focusIndex == 0}; 
+			but1.Create ();
+			TransformButton but2 = new TransformButton { name = "transformation", x = 120, y = 0, focus = focusIndex == 1}; 
+			but2.Create ();
+			TransformButton but3 = new TransformButton { name = "transformation", x = 230, y = 0, focus = focusIndex == 2}; 
+			but3.Create ();
+			TransformButton but4 = new TransformButton { name = "transformation", x = 340, y = 0, focus = focusIndex == 3 }; 
+			but4.Create ();
 		}
 	}
 
+	// Check if our shift key is displayed
 	void Update () {
 		if (Input.GetKeyDown(KeyCode.LeftShift)) {
-			showTransformOptions = true;
+			OpenTransformOptions ();
+
+			// Needs to change when ShapeManager is available
+			focusIndex += 1;
+			if (focusIndex > 3) {
+				focusIndex = 0;
+			}
 		}
 	}
 
@@ -45,14 +67,25 @@ public class HUD : MonoBehaviour {
 		levelTimer.Dispose ();
 	}
 
+	// Adds a second to the level timer every interval step
 	void OnTimerEvent (object source, ElapsedEventArgs e) {
 		seconds += 1;
 		timerText = seconds.ToString ();
 	}
 
+	// Hides the transform options when the timer has elapsed
+	void OnHideTransformOptionsEvent (object source, ElapsedEventArgs e) {
+		showTransformOptions = false;
+		hideTransformOptions.Stop();
+	}
 
+	// Open the transform options and start the timer
+	private void OpenTransformOptions () {
+		showTransformOptions = true;
 
-	private void StartTransformTimer () {
-		
+		if (hideTransformOptions.Enabled) {
+			hideTransformOptions.Stop ();
+		}
+		hideTransformOptions.Start ();
 	}
 }
