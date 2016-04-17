@@ -12,6 +12,7 @@ public class ShapeManager : MonoBehaviour
         "block",
         "ball",
         "line",
+        "tiny",
         "big"
     };
 
@@ -96,6 +97,13 @@ public class ShapeManager : MonoBehaviour
 
                 transform.position = new Vector3(transform.position.x, transform.position.y + 3, transform.position.z);
                 
+                break;
+            case "tiny":
+                sprite.spriteImage = playerSprites[4];
+
+                currentShape = gameObject.AddComponent<BlockShape>();
+
+                transform.localScale = new Vector3(0.9f, 0.9f, 1f);
                 break;
             case "big":
                 sprite.spriteImage = playerSprites[1];
