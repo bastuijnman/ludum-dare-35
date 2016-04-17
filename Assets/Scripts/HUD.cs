@@ -37,13 +37,36 @@ public class HUD : MonoBehaviour {
 		if (showTransformOptions) {
 			
 			// The whole .Create thing can be handled better via an own Configuration class in the constructor
-			TransformButton but1 = new TransformButton { name = "transformation", x = 10, y = 0, focus = focusIndex == 0}; 
+			TransformButton but1 = new TransformButton { 
+				name = "transformation", 
+				x = CalculateTransformationLeft(0, 4), 
+				y = 0, 
+				focus = focusIndex == 0
+			}; 
 			but1.Create ();
-			TransformButton but2 = new TransformButton { name = "transformation", x = 120, y = 0, focus = focusIndex == 1}; 
+
+			TransformButton but2 = new TransformButton { 
+				name = "transformation", 
+				x = CalculateTransformationLeft(1, 4), 
+				y = 0, 
+				focus = focusIndex == 1
+			}; 
 			but2.Create ();
-			TransformButton but3 = new TransformButton { name = "transformation", x = 230, y = 0, focus = focusIndex == 2}; 
+
+			TransformButton but3 = new TransformButton { 
+				name = "transformation", 
+				x = CalculateTransformationLeft(2, 4), 
+				y = 0, 
+				focus = focusIndex == 2
+			}; 
 			but3.Create ();
-			TransformButton but4 = new TransformButton { name = "transformation", x = 340, y = 0, focus = focusIndex == 3 }; 
+
+			TransformButton but4 = new TransformButton { 
+				name = "transformation", 
+				x = CalculateTransformationLeft(3, 4), 
+				y = 0, 
+				focus = focusIndex == 3
+			}; 
 			but4.Create ();
 		}
 	}
@@ -87,5 +110,13 @@ public class HUD : MonoBehaviour {
 			hideTransformOptions.Stop ();
 		}
 		hideTransformOptions.Start ();
+	}
+
+	// Calculate what the left position of the transformation button should be
+	private int CalculateTransformationLeft (int index, int count) {
+		int totalWidth = (count * 110) - 10;
+		int offset = (Screen.width - totalWidth) / 2;
+
+		return offset + (index * 110);
 	}
 }
