@@ -30,6 +30,32 @@ public class ShapeManager : MonoBehaviour
 
     }
 
+	public Sprite GetSpriteByName (string name) {
+		switch (name) 
+		{
+			case "block":
+				return playerSprites [1];
+				break;
+
+			case "ball":
+				return playerSprites [3];
+				break;
+
+			case "line":
+				return playerSprites [0];
+				break;
+
+			case "tiny":
+				return playerSprites [4];
+				break;
+
+			case "big":
+				return playerSprites[1];
+				break;
+		}
+		return new Sprite ();
+	}
+
     public void UnlockShape(string shape)
     {
         if (shapeList.IndexOf(shape) == -1)
