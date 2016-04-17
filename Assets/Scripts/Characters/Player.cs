@@ -32,7 +32,7 @@ public class Player : Character {
          */
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            Reshape();
+            shapeManager.Reshape();
         }
 
         // Add to the current object position by updating movement with speed and game speed
