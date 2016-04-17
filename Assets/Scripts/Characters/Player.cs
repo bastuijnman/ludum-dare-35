@@ -19,6 +19,7 @@ public class Player : Character {
 		 * 
 		 */
 		movement = new Vector3 (Input.GetAxis ("Horizontal"), 0.0f, 0.0f);
+		GameObject.FindGameObjectWithTag ("MainCamera").transform.rotation = new Quaternion (0, 0, 0, 0);
 
 		if (Input.GetButtonDown ("Jump") && !playerIsFalling) {
 			body.velocity = new Vector2 (0, jumpForce);
