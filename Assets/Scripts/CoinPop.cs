@@ -3,11 +3,12 @@ using System.Collections;
 
 public class CoinPop : MonoBehaviour {
 
+    public float coinDisplayTIme = 0.5f;
+
     private GameObject coin;
     private GameObject score;
-
     private Sprite[] scoreSprites;
-    public float coinShow = 0.5f;
+
     // Use this for initialization
     void Start () {
         scoreSprites = Resources.LoadAll<Sprite>("Tilesets/spritesheet_hud");
@@ -38,7 +39,7 @@ public class CoinPop : MonoBehaviour {
     IEnumerator LateCall()
     {
 
-        yield return new WaitForSeconds(coinShow);
+        yield return new WaitForSeconds(coinDisplayTIme);
 
         coin.SetActive(false);
         //Do Other Stuff Here...
