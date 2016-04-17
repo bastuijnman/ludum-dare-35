@@ -12,28 +12,25 @@ public class FlipBlock : MonoBehaviour
                           //currentSprite be longer than the array length.
     private int arrayLength;
 
-    void Start()
-    {
+    private bool hasCollide = false;
+
+    void Start() {
         arrayLength = blockColors.Length - 1;
     }
 
-    void OnCollisionEnter2D()
+    void OnCollisionEnter2D(Collision2D col) {
+        if (col.gameObject.tag == "Player"){
+            if (hasCollide == false)
+            {
+                hasCollide = true;
+                currentSprite += 1;
+                GetComponent<SpriteRenderer>().sprite = blockColors[currentSprite];
+            }
+        }
+    }
+
+    void OnCollisionExit2D()
     {
-        currentSprite += 1; // adds 1 to the "currentSprite" integer.
-
-        Debug.logger.Log(currentSprite);
-        Debug.logger.Log(arrayLength);
-
-        if (currentSprite > arrayLength)
-        { //Deletes the object if currentSprite is greater than the
-          //length of the blockColors array
-            deleting = true;
-            GameObject.Destroy(gameObject);
-        }
-        if (!deleting)
-        {
-            GetComponent<SpriteRenderer>().sprite = blockColors[currentSprite]; //sets the SpriteRenderer's
-                                                                                //Sprite to be the desired sprite in the blockColors array.
-        }
+        hasCollide = false;
     }
 }
