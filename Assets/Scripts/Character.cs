@@ -31,36 +31,42 @@ public class Character : MonoBehaviour
         // Add the sprite image
         sprite = gameObject.AddComponent<SpriteImage>();
 
-        sprite.spriteImage = block;
-
-        currentShape = gameObject.AddComponent<BlockShape>();
+        Reshape(1);
 
     }
 
-    public void Reshape()
+    public void Reshape(int index = -1)
     {
-        spriteIndex++;
-
-        if (spriteIndex == availableTransforms)
+        if (index == -1)
         {
-            spriteIndex = 0;
+            spriteIndex++;
+
+            if (spriteIndex == availableTransforms)
+            {
+                spriteIndex = 0;
+            }
+        } else
+        {
+            spriteIndex = index;
         }
 
+        if (currentShape != null) {
         DestroyImmediate(currentShape);
+            }
 
         switch (spriteIndex)
         {
             case 0:
                 sprite.spriteImage = block;
 
-                currentShape = gameObject.AddComponent<BlockShape>();
+                currentShape = gameObject.AddComponent<RotatingBlockShape>();
 
                 transform.localScale = new Vector3(2f, 2f, 1f);
                 break;
             case 1:
                 sprite.spriteImage = circle;
 
-                currentShape = gameObject.AddComponent<CircleShape>();
+                currentShape = gameObject.AddComponent<BallShape>();
 
                 transform.localScale = new Vector3(2f, 2f, 1f);
                 break;
@@ -69,9 +75,7 @@ public class Character : MonoBehaviour
 
                 currentShape = gameObject.AddComponent<BlockShape>();
 
-                transform.position = new Vector3(transform.position.x, 2f, transform.position.z);
-
-                transform.localScale = new Vector3(1f, 4f, 1f);
+                transform.localScale = new Vector3(1f, 1f, 1f);
                 break;
 
         }
