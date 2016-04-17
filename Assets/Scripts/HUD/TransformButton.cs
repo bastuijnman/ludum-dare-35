@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.IO;
 
 public class TransformButton
 {
@@ -16,7 +15,8 @@ public class TransformButton
 			name = name + "-focus";
 		}
 
-		Texture2D texture = LoadTransformImage (name);
+		name = "Assets/Resources/HUD/" + name + ".png";
+		Texture2D texture = Utils.LoadImage (name, 100, 100);
 
 		// There must be a better way to set the background stuff of the GUI, but fuck it for now
 		Color origColor = GUI.backgroundColor;
@@ -27,22 +27,5 @@ public class TransformButton
 		// Reset the original color
 		GUI.backgroundColor = origColor;
 	}
-
-	// Load an image and turn it into a texture
-	private Texture2D LoadTransformImage (string filename) {
 		
-		string path = "Assets/Resources/HUD/" + filename + ".png";
-		Texture2D texture = new Texture2D (100, 100);
-
-		byte[] file;
-
-		if (File.Exists (path)) {
-			file = File.ReadAllBytes (path);
-			texture.LoadImage (file);
-			texture.name = name;
-		}
-
-		return texture;
-
-	}
 }
