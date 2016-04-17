@@ -4,6 +4,7 @@ using System.Collections;
 public class LevelEndpoint : MonoBehaviour {
 
 	BoxCollider2D endpointCollider;
+	public bool isFirstLevel = false;
 
 	// Initalises the LevelEndpoint
 	void Start () {
@@ -15,7 +16,13 @@ public class LevelEndpoint : MonoBehaviour {
 	void OnCollisionEnter2D (Collision2D col) {
 		if (col.gameObject.tag == "Player") {
 			GameSceneManager manager = GameSceneManager.Instance;
-			manager.NextScene ();
+
+			// If we have the first level we can just "restart" the first scene in the manager
+			if (isFirstLevel) {
+				manager.RestartScene ();
+			} else {
+				manager.NextScene ();
+			}
 		}
 	}
 }
