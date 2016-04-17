@@ -39,4 +39,10 @@ public class Player : Character {
 	
 	}
 
+	void OnCollisionEnter2D (Collision2D col) {
+		
+		// We're colliding with something so we'll assume we've stopped falling for now
+		playerIsFalling = false;
+	}
+
 }
