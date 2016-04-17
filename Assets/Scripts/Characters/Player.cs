@@ -71,7 +71,7 @@ public class Player : Character {
             }
         } else
         {
-            body.AddForceAtPosition(new Vector2(currentSpeed, 0), new Vector2(0, transform.localScale.y / 2));
+            body.AddForce(new Vector2(currentSpeed, 0));
         }
     }
 

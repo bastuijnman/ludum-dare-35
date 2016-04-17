@@ -5,6 +5,9 @@ public class Shape : MonoBehaviour
 {
     public Character character;
 
+    private bool rotationEnabled = false;
+    private string type = "shape";
+
     public float maxSpeed = 10.0f;
 
     // Use this for initialization
@@ -16,7 +19,27 @@ public class Shape : MonoBehaviour
         character = gameObject.GetComponent<Character>();
     }
 
-    // Auto-implemented properties.
-    public bool Rotation { get; set; }
-    public string shapeType { get; set; }
+    public bool Rotation
+    {
+        get
+        {
+            return rotationEnabled;
+        }
+        set
+        {
+            rotationEnabled = value;
+        }
+    }
+
+    public string shapeType
+    {
+        get
+        {
+            return type;
+        }
+        set
+        {
+            type = value;
+        }
+    }
 }
