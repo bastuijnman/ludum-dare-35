@@ -7,6 +7,7 @@ public class TransformButton
 	public int y { get; set; }
 	public bool focus { get; set; }
 	public string name { get; set; }
+	public string spriteName { get; set; }
 	public Sprite sprite { get; set; }
 
 	// Actually creates the GUI button
@@ -35,8 +36,19 @@ public class TransformButton
 		);
 
 		float ratio = spriteRect.width / spriteRect.height;
-		float targetWidth = 70;
-		float targetHeight = 70;
+
+		float targetWidth = 50;
+		float targetHeight = 50;
+
+		if (spriteName == "big") {
+			targetWidth = 70;
+			targetHeight = 70;
+		}
+
+		if (spriteName == "tiny") {
+			targetWidth = 30;
+			targetHeight = 30;
+		}
 
 		if (ratio < 1) {
 			targetWidth = targetWidth * ratio;
@@ -44,7 +56,7 @@ public class TransformButton
 			targetHeight = targetWidth / ratio;
 		}
 
-		GUI.DrawTextureWithTexCoords(new Rect(x + 15 + ((70 - targetWidth) / 2), y + 15, targetWidth, targetHeight), spriteTexture, drawRect);
+		GUI.DrawTextureWithTexCoords(new Rect(x + 15 + ((70 - targetWidth) / 2), y + 15 + ((70 - targetHeight) / 2), targetWidth, targetHeight), spriteTexture, drawRect);
 
 		// Reset the original color
 		GUI.backgroundColor = origColor;

@@ -50,7 +50,8 @@ public class HUD : MonoBehaviour {
 					x = CalculateTransformationLeft(idx, shapes.Count),
 					y = 0,
 					focus = focusIndex == idx,
-					sprite = shapeManager.GetSpriteByName(name)
+					sprite = shapeManager.GetSpriteByName(name),
+					spriteName = name
 				};
 				but.Create();
 
