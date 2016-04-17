@@ -17,7 +17,15 @@ public class TransformButton
 		}
 
 		Texture2D texture = LoadTransformImage (name);
+
+		// There must be a better way to set the background stuff of the GUI, but fuck it for now
+		Color origColor = GUI.backgroundColor;
+		GUI.backgroundColor = Color.clear;
+
 		GUI.Button (new Rect (x, y, 100, 100), texture);
+
+		// Reset the original color
+		GUI.backgroundColor = origColor;
 	}
 
 	// Load an image and turn it into a texture
