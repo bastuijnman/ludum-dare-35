@@ -3,19 +3,18 @@ using System.Collections;
 
 public class CoinPop : MonoBehaviour {
 
-    public int fakeScore;
     private GameObject coin;
     private GameObject score;
-    public Sprite score0;
-    public Sprite score1;
+
+    private Sprite[] scoreSprites;
     public float coinShow = 0.5f;
     // Use this for initialization
     void Start () {
-        fakeScore = 0;
+        scoreSprites = Resources.LoadAll<Sprite>("Tilesets/spritesheet_hud");
         coin = GameObject.Find("Coin");
-        score = GameObject.Find("score");
+        score = GameObject.Find("Score");
         coin.SetActive(false);
-        score.GetComponent<SpriteRenderer>().sprite = score0;
+        score.GetComponent<SpriteRenderer>().sprite = scoreSprites[29];
     }
 	
 	// Update is called once per frame
@@ -31,10 +30,9 @@ public class CoinPop : MonoBehaviour {
     }
 
     void AddScore() {
-        fakeScore += 1;
         coin.SetActive(true);
+        score.GetComponent<SpriteRenderer>().sprite = scoreSprites[25];
         StartCoroutine(LateCall());
-        score.GetComponent<SpriteRenderer>().sprite = score1;
     }
 
     IEnumerator LateCall()
