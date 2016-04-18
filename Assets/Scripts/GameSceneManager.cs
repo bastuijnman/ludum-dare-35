@@ -23,7 +23,8 @@ public sealed class GameSceneManager {
         "scenes/level7",
         "scenes/level8",
         "scenes/level9",
-        "scenes/level10"
+        "scenes/level10",
+		"scenes/game-win"
     });
 
 
