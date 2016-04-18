@@ -9,7 +9,7 @@ public class MenuButton
 	public System.Func<bool> callback { get; set; }
 
 	public void Create () {
-		Texture2D texture = Utils.LoadImage ("Assets/Resources/Images/menu-button.jpg", 100, 100);
+		Texture2D texture = (Texture2D)Resources.Load ("Images/menu-button");
 
 		// There must be a better way to set the background stuff of the GUI, but fuck it for now
 		Color origColor = GUI.backgroundColor;

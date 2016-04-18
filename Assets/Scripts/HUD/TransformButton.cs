@@ -17,8 +17,8 @@ public class TransformButton
 			name = name + "-focus";
 		}
 
-		name = "Assets/Resources/HUD/" + name + ".png";
-		Texture2D texture = Utils.LoadImage (name, 100, 100);
+		name = "HUD/" + name;
+		Texture2D texture = (Texture2D)Resources.Load (name);
 
 		// There must be a better way to set the background stuff of the GUI, but fuck it for now
 		Color origColor = GUI.backgroundColor;
