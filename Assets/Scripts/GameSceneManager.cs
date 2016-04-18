@@ -22,8 +22,9 @@ public sealed class GameSceneManager {
         "scenes/level6",
         "scenes/level7",
         "scenes/level8",
-        "scenes/level9"
-	});
+        "scenes/level9",
+        "scenes/level10"
+    });
 
 
 	// Empty constructors
