@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using System.Timers;
 
 public class HUD : MonoBehaviour {
@@ -10,6 +11,8 @@ public class HUD : MonoBehaviour {
 
 	private Timer levelTimer;
 	private Timer hideTransformOptions;
+
+	ShapeManager shapeManager;
 
 	private bool showTransformOptions = false;
 
@@ -25,6 +28,8 @@ public class HUD : MonoBehaviour {
 		hideTransformOptions = new Timer ();
 		hideTransformOptions.Interval = 5000;
 		hideTransformOptions.Elapsed += new ElapsedEventHandler (OnHideTransformOptionsEvent);
+
+		shapeManager = new ShapeManager ();
 	}
 
 	// Handles creating the GUI elements
@@ -36,51 +41,36 @@ public class HUD : MonoBehaviour {
 		// Show transform options when needed
 		if (showTransformOptions) {
 			
-			// The whole .Create thing can be handled better via an own Configuration class in the constructor
-			TransformButton but1 = new TransformButton { 
-				name = "transformation", 
-				x = CalculateTransformationLeft(0, 4), 
-				y = 0, 
-				focus = focusIndex == 0
-			}; 
-			but1.Create ();
+			List<string> shapes = shapeManager.GetUnlockedShapes ();
+			int idx = 0;
 
-			TransformButton but2 = new TransformButton { 
-				name = "transformation", 
-				x = CalculateTransformationLeft(1, 4), 
-				y = 0, 
-				focus = focusIndex == 1
-			}; 
-			but2.Create ();
+			shapes.ForEach (delegate (string name) {
+				TransformButton but = new TransformButton {
+					name = "transformation",
+					x = CalculateTransformationLeft(idx, shapes.Count),
+					y = 0,
+					focus = focusIndex == idx,
+					sprite = shapeManager.GetSpriteByName(name),
+					spriteName = name
+				};
+				but.Create();
 
-			TransformButton but3 = new TransformButton { 
-				name = "transformation", 
-				x = CalculateTransformationLeft(2, 4), 
-				y = 0, 
-				focus = focusIndex == 2
-			}; 
-			but3.Create ();
-
-			TransformButton but4 = new TransformButton { 
-				name = "transformation", 
-				x = CalculateTransformationLeft(3, 4), 
-				y = 0, 
-				focus = focusIndex == 3
-			}; 
-			but4.Create ();
+				idx++;
+			});
 		}
 	}
 
 	// Check if our shift key is displayed
 	void Update () {
 		if (Input.GetKeyDown(KeyCode.LeftShift)) {
-			OpenTransformOptions ();
 
 			// Needs to change when ShapeManager is available
 			focusIndex += 1;
-			if (focusIndex > 3) {
+			if (focusIndex == shapeManager.GetUnlockedShapes ().Count) {
 				focusIndex = 0;
 			}
+
+			OpenTransformOptions ();
 		}
 	}
 
