@@ -5,13 +5,17 @@ public class BlokePath : MonoBehaviour {
 
     public float timeToDeath = 13f;
 
-    private Sprite[] npcSprites;
+    private Sprite[] hudSprites;
     private GameObject npc;
     private GameObject heart;
+    private GameObject rabbitdead;
 
     // Use this for initialization
     void Start () {
-        npcSprites = Resources.LoadAll<Sprite>("Tilesets/spritesheet_hud");
+        rabbitdead = GameObject.Find("rabbitdead");
+        rabbitdead.SetActive(false);
+        hudSprites = Resources.LoadAll<Sprite>("Tilesets/spritesheet_hud");
+
         iTween.MoveTo(gameObject, iTween.Hash("path", iTweenPath.GetPath("BlokePath1"), "delay", 12, "time", 4, "easetype", "linear"));
         iTween.MoveTo(gameObject, iTween.Hash("path", iTweenPath.GetPath("BlokePath2"), "delay", 16, "time", 4, "easetype", "linear"));
         StartCoroutine(LateCall());
@@ -27,9 +31,11 @@ public class BlokePath : MonoBehaviour {
     
         yield return new WaitForSeconds(timeToDeath);
         npc = GameObject.Find("NPC");
+        
         heart = GameObject.Find("HeartContainer");
-        npc.GetComponent<SpriteRenderer>().sprite = npcSprites[22];
-        heart.GetComponent<SpriteRenderer>().sprite = npcSprites[15];
+        npc.SetActive(false);
+        rabbitdead.SetActive(true);
+        heart.GetComponent<SpriteRenderer>().sprite = hudSprites[15];
         //Do Other Stuff Here...
     }
 }
