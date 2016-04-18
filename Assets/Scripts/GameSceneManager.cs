@@ -13,8 +13,16 @@ public sealed class GameSceneManager {
 
 	// List of scene names
 	private List<string> sceneList = new List<string>(new string[] {
-		"scenes/level1",
-		"scenes/level2"
+        "scenes/level0",
+        "scenes/level1",
+        "scenes/level2",
+        "scenes/level3",
+        "scenes/level4",
+        "scenes/level5",
+        "scenes/level6",
+        "scenes/level7",
+        "scenes/level8",
+        "scenes/level9"
 	});
 
 
