@@ -15,9 +15,11 @@ public class Player : Character {
 
     bool playerIsFalling = false;
 
+    private AudioClip jumpSound;
+
     void Update()
     {
-
+        
         /*
 		 * 
 		 * Axis are mapped to standard Unity input mapping.
@@ -30,6 +32,8 @@ public class Player : Character {
 
         if (Input.GetButtonDown("Jump") && !playerIsFalling)
         {
+            jumpSound = gameObject.GetComponent<AudioSource>().clip;
+            gameObject.GetComponent<AudioSource>().PlayOneShot(jumpSound);
             body.velocity = new Vector2(0, jumpForce);
             playerIsFalling = true;
         }
