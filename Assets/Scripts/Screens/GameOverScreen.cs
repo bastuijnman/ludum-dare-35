@@ -19,7 +19,7 @@ public class GameOverScreen : MonoBehaviour
 	void OnGUI () {
 		GUI.DrawTexture (
 			new Rect (0, 0, Screen.width, Screen.height), 
-			Utils.LoadImage("Assets/Resources/Images/game-over.jpg", 1280, 720), 
+			(Texture2D)Resources.Load("Images/game-over"), 
 			ScaleMode.StretchToFill
 		);
 	}
