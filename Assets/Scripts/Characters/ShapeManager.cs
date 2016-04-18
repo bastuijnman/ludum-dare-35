@@ -10,7 +10,8 @@ public class ShapeManager : MonoBehaviour
 
     private List<string> shapeList = new List<string> {
         "block",
-        "ball",
+		"ball",
+		"line-horizontal",
         "line",
         "tiny",
         "big"
@@ -29,6 +30,36 @@ public class ShapeManager : MonoBehaviour
         Reshape(0);
 
     }
+
+	public Sprite GetSpriteByName (string name) {
+		switch (name) 
+		{
+			case "block":
+				return playerSprites [2];
+				break;
+
+			case "ball":
+				return playerSprites [4];
+				break;
+
+			case "line-horizontal":
+				return playerSprites [1];
+				break;
+
+			case "line":
+				return playerSprites [0];
+				break;
+
+			case "tiny":
+				return playerSprites [5];
+				break;
+
+			case "big":
+				return playerSprites[6];
+				break;
+		}
+		return new Sprite ();
+	}
 
     public void UnlockShape(string shape)
     {
@@ -71,7 +102,7 @@ public class ShapeManager : MonoBehaviour
         switch (shapeList[spriteIndex])
         {
             case "block":
-                sprite.spriteImage = playerSprites[1];
+				sprite.spriteImage = GetSpriteByName("block");
 
                 currentShape = gameObject.AddComponent<BlockShape>();
                 currentShape.Rotation = true;
@@ -79,15 +110,27 @@ public class ShapeManager : MonoBehaviour
                 transform.localScale = new Vector3(2f, 2f, 1f);
                 break;
             case "ball":
-                sprite.spriteImage = playerSprites[3];
+				sprite.spriteImage = GetSpriteByName("ball");
 
                 currentShape = gameObject.AddComponent<BallShape>();
 
                 transform.localScale = new Vector3(2f, 2f, 1f);
 
                 break;
+			case "line-horizontal":
+				sprite.spriteImage = GetSpriteByName("line-horizontal");
+
+				currentShape = gameObject.AddComponent<BlockShape>();
+
+				currentShape.maxSpeed = 7.5f;
+
+				transform.localScale = new Vector3(2f, 2f, 1f);
+
+				transform.position = new Vector3(transform.position.x, transform.position.y + 3, transform.position.z);
+
+				break;
             case "line":
-                sprite.spriteImage = playerSprites[0];
+				sprite.spriteImage = GetSpriteByName("line");
 
                 currentShape = gameObject.AddComponent<BlockShape>();
 
@@ -99,14 +142,14 @@ public class ShapeManager : MonoBehaviour
                 
                 break;
             case "tiny":
-                sprite.spriteImage = playerSprites[4];
+				sprite.spriteImage = GetSpriteByName("tiny");
 
                 currentShape = gameObject.AddComponent<BlockShape>();
 
                 transform.localScale = new Vector3(0.9f, 0.9f, 1f);
                 break;
             case "big":
-                sprite.spriteImage = playerSprites[1];
+				sprite.spriteImage = GetSpriteByName("big");
 
                 currentShape = gameObject.AddComponent<BlockShape>();
 
