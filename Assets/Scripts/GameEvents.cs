@@ -11,8 +11,16 @@ using System.Timers;
 public static class GameEvents
 {
 
+	// OH GOD SO UGLY!!!! Enables hard mode if set to true
+	public static bool HardMode = false;
+
 	// Die and load game over
 	public static void Death() {
+
+		// When hard mode is active skip to level 1
+		if (HardMode) {
+			GameSceneManager.Instance.ResetHardMode ();
+		}
 		SceneManager.LoadScene ("scenes/game-over");
 	}
 

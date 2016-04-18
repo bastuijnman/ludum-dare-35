@@ -43,6 +43,13 @@ public sealed class GameSceneManager {
 		SceneManager.LoadScene (sceneList [sceneIndex]);
 	}
 
+	// Reset level index back to level 1
+	public void ResetHardMode () {
+		
+		// Reset to level1
+		sceneIndex = 1;
+	}
+
 	// Gets the singleton instance
 	public static GameSceneManager Instance {
 		get {
