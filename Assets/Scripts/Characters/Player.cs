@@ -30,7 +30,7 @@ public class Player : Character {
         movement = new Vector3(Input.GetAxis("Horizontal"), 0.0f, 0.0f);
         GameObject.FindGameObjectWithTag("MainCamera").transform.rotation = new Quaternion(0, 0, 0, 0);
 
-        if (Input.GetButtonDown("Jump") && !playerIsFalling)
+        if ((Input.GetAxis("Vertical") > 0 || Input.GetButtonDown("Jump")) && !playerIsFalling)
         {
             jumpSound = gameObject.GetComponent<AudioSource>().clip;
             gameObject.GetComponent<AudioSource>().PlayOneShot(jumpSound);
@@ -49,11 +49,11 @@ public class Player : Character {
             body.transform.rotation = new Quaternion(0, 0, 0, 0);
             body.angularVelocity = 0;
         }
-        if ((Input.GetKey("left")) && (Mathf.Abs(currentSpeed) < shapeManager.getCurrentShape().maxSpeed))
+        if (Input.GetAxis("Horizontal") < 0 && (Mathf.Abs(currentSpeed) < shapeManager.getCurrentShape().maxSpeed))
         {
             currentSpeed -= Acceleration;
         }
-        else if ((Input.GetKey("right")) && (currentSpeed < shapeManager.getCurrentShape().maxSpeed))
+        else if (Input.GetAxis("Horizontal") > 0 && (currentSpeed < shapeManager.getCurrentShape().maxSpeed))
         {
             currentSpeed += Acceleration;
         }
