@@ -10,7 +10,7 @@ public class Player : Character {
     float Deceleration = 1;
 
 	// Force at which the player can jump
-	float jumpForce = 3.0f;
+	float jumpForce = 200.0f;
     public Vector3 movement;
 
     bool playerIsFalling = false;
@@ -34,7 +34,7 @@ public class Player : Character {
         {
             jumpSound = gameObject.GetComponent<AudioSource>().clip;
             gameObject.GetComponent<AudioSource>().PlayOneShot(jumpSound);
-            body.velocity = new Vector2(0, jumpForce);
+            body.AddForce(new Vector2(0, jumpForce));
             playerIsFalling = true;
         }
 
