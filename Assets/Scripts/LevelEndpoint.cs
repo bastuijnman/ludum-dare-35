@@ -18,6 +18,7 @@ public class LevelEndpoint : MonoBehaviour {
 			GameSceneManager manager = GameSceneManager.Instance;
 
 			// If we have the first level we can just "restart" the first scene in the manager
+			Debug.Log(isFirstLevel);
 			if (isFirstLevel) {
 				manager.RestartScene ();
 			} else {
