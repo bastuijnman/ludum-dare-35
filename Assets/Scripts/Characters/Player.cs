@@ -15,6 +15,13 @@ public class Player : Character {
 
     bool playerIsFalling = false;
 
+    private AudioClip jumpSound;
+
+   void Start()
+   {
+        jumpSound = GameObject.FindGameObjectWithTag("Player").GetComponent<AudioSource>().clip;
+   }
+
     void Update()
     {
 
@@ -30,6 +37,7 @@ public class Player : Character {
 
         if (Input.GetButtonDown("Jump") && !playerIsFalling)
         {
+            GameObject.FindGameObjectWithTag("Player").GetComponent<AudioSource>().PlayOneShot(jumpSound);
             body.velocity = new Vector2(0, jumpForce);
             playerIsFalling = true;
         }
