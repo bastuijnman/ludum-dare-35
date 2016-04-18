@@ -26,11 +26,11 @@ public class HUD : MonoBehaviour {
 
 		// Keep reference to the hide timer
 		hideTransformOptions = new Timer ();
-		hideTransformOptions.Interval = 5000;
+		hideTransformOptions.Interval = 2000;
 		hideTransformOptions.Elapsed += new ElapsedEventHandler (OnHideTransformOptionsEvent);
 
-		shapeManager = new ShapeManager ();
-	}
+        shapeManager = new ShapeManager ();
+    }
 
 	// Handles creating the GUI elements
 	void OnGUI () {
@@ -62,10 +62,18 @@ public class HUD : MonoBehaviour {
 
 	// Check if our shift key is displayed
 	void Update () {
+        if (showTransformOptions)
+        {
+            Time.timeScale = 0;
+        } else
+        {
+            Time.timeScale = 1;
+        }
 		if (Input.GetKeyDown(KeyCode.LeftShift)) {
 
-			// Needs to change when ShapeManager is available
-			focusIndex += 1;
+
+            // Needs to change when ShapeManager is available
+            focusIndex += 1;
 			if (focusIndex == shapeManager.GetUnlockedShapes ().Count) {
 				focusIndex = 0;
 			}

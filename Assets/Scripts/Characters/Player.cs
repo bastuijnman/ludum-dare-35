@@ -48,6 +48,7 @@ public class Player : Character {
 
             body.transform.rotation = new Quaternion(0, 0, 0, 0);
             body.angularVelocity = 0;
+            body.velocity = new Vector2(0, 0);
         }
         if ((Input.GetKey("left")) && (Mathf.Abs(currentSpeed) < shapeManager.getCurrentShape().maxSpeed))
         {
