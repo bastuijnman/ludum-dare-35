@@ -7,8 +7,12 @@ public class DeathTrigger : MonoBehaviour {
 
 	// Initalises the LevelEndpoint
 	void Start () {
-		deathCollider = gameObject.AddComponent<BoxCollider2D> ();
-		deathCollider.offset = Vector3.zero;
+
+		// Only add a collider as long as we don't have a custom one
+		if (gameObject.GetComponent<BoxCollider2D> () == null) {
+			deathCollider = gameObject.AddComponent<BoxCollider2D> ();
+			deathCollider.offset = Vector3.zero;
+		}
 	}
 
 	// When a player collides we need to load the next level
